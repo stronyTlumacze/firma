@@ -1,0 +1,52 @@
+.eye_error {
+  height: 45px;
+  width: 45px;
+  background-color: #333;
+  display: inline-block;
+  margin-right: 125px;
+  border-radius: 50%;
+}
+.box_error {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.smile_error {
+  /*border-bottom: 2px solid #2c2c2c;
+    width: 240px;
+    heigth:240px;
+    margin-top: 8em;
+    border-radius: 50%/100px 100px 0 0;*/
+  margin-left: 22px;
+  width: 180px;
+  height: 100px;
+  border: solid 5px #333;
+  border-color: transparent transparent #333 transparent;
+  border-radius: 0 0 180px 50%/5px;
+  transition: border-radius 0.5s;
+}
+
+.smile_error:hover {
+  cursor: pointer;
+  border-radius: 0 0 180px 70%/70px;
+}
+.text_error-404 {
+  color: #333;
+}
+.head_error {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.sub_error {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #333;
+}
+.sublow_error {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}

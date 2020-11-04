@@ -1,0 +1,103 @@
+.allSteps__container {
+  padding-top: 6rem;
+
+  @include media('>=tablet') {
+    padding-top: 8rem;
+  }
+
+  .allSteps__wrapper {
+
+    .allSteps__box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+    }
+  }
+  .allSteps__info {
+    padding-top: 6rem;
+    .step__container {
+      .step__wrapper {
+        .step__title {
+          background: #fd2e41;
+          padding: 1rem;
+          color: #fff;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+
+      .step {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3rem;
+        position: relative;
+
+        .steps_box {
+          max-width: 22rem;
+          position: relative;
+          background: #404040;
+          margin: 1.7rem 0.8rem;
+          padding: 1rem;
+          background: #fbfbff;
+          border: 1px solid #e9e9e9;
+          border-radius: 0.2rem;
+          cursor: crosshair;
+          will-change: transform;
+
+          &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+          }
+
+          p:nth-child(3) span svg {
+            min-width: 1.5rem;
+          }
+
+          p {
+            padding-top: 1rem;
+            font-size: 19px !important;
+            line-height: 1.3rem !important;
+
+            span {
+              svg {
+                height: 1rem;
+                vertical-align: bottom;
+                padding-right: 0.3rem;
+                transform: translate(0px, -3px);
+              }
+            }
+          }
+
+          .box_title {
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e9e9e9;
+          }
+
+          p {
+            padding-top: 0.5rem;
+            @include media('>=tablet') {
+              font-size: 22px;
+            }
+          }
+
+          img {
+            padding-top: 0.5rem;
+            height: 3rem;
+            width: 3rem;
+
+            @include media('>=tablet') {
+              height: 4rem;
+              width: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

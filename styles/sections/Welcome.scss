@@ -1,0 +1,215 @@
+.welcome__container {
+  height: 36rem;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    left: 5vw;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    img {
+      width: 3.5rem;
+    }
+  }
+
+  .welcome__wrapper {
+    display: flex;
+    padding: 5rem 0.5rem;
+    position: relative;
+
+    @include media('>=tablet') {
+      padding: 4rem 0rem 3rem 0rem;
+    }
+
+    .welcome__box-left {
+      text-align: center;
+      position: relative;
+      height: 24rem;
+      width: 100%;
+
+      // @include media('>=tablet') {
+      //   width: 60%;
+      // }
+
+      .welcome__box-left-content {
+        @include media('>=tablet') {
+          text-align: left;
+          padding-left: 1rem;
+        }
+
+        .dobrazmiana {
+          display: inline-block;
+          background: #fbfbff;
+          border: 1px solid #e9e9e9;
+          padding: 0.1rem 0.25rem;
+          border-radius: 0.1rem;
+          color: $blueColorDark;
+          margin-top: 2rem;
+          font-size: 1rem;
+
+          @include media('>=tablet') {
+            transform: translate(0rem, 20px);
+          }
+        }
+
+        .title {
+          font-weight: 800;
+          color: $blueColorDark;
+          min-height: 12rem;
+          margin: 1rem 0 1rem 0;
+
+          @include media('>=tablet') {
+            font-size: 48px;
+          }
+        }
+
+        .option {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 0;
+          color: $blueColor;
+          font-size: 32px;
+          font-weight: 700;
+
+          .left__option,
+          .right__option {
+            text-align: left;
+
+            .checked {
+              width: 1.2rem;
+              margin-right: 0.5rem;
+              fill: $blueColor;
+            }
+          }
+
+          p {
+            line-height: 1.6rem;
+          }
+
+          .left__option {
+            margin-right: 1rem;
+          }
+
+          @include media('>=550px') {
+            flex-direction: row;
+            padding: 0.8rem 0;
+          }
+
+          @include media('>=tablet') {
+            justify-content: left;
+          }
+        }
+
+        .e-book {
+          display: inline-block;
+          transform: translate(0rem, 1rem);
+          padding: 0;
+        }
+      }
+    }
+
+    .pageImg__absolute {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 45rem;
+      transform: translate(1rem, -3rem);
+      position: absolute;
+      z-index: 0;
+      max-height: 38rem;
+      top: 8rem;
+      z-index: -1;
+      display: none;
+
+      @include media('>=tablet') {
+        display: block;
+      }
+    }
+  }
+}
+
+.welcome__tlo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -3;
+}
+
+.welcome__elementy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+
+  & > * {
+    position: absolute;
+    z-index: -10;
+  }
+
+  span {
+    position: absolute;
+    &::before {
+      content: '';
+      background-image: url('../../public/flagi.png');
+      width: 25px;
+      height: 25px;
+      display: block;
+    }
+  }
+
+
+  span:nth-child(1) {
+    top: 21%;
+    left: 22%;
+    position: absolute;
+    animation: animationFramesTwo 19s infinite linear;
+    &::before {
+      background-position: -325px -300px;
+    }
+  }
+
+  span:nth-child(2) {
+    top: 27%;
+    left: 7%;
+    animation: animationFramesFour 19s infinite linear;
+    &::before {
+      content: '';
+      background-position: -200px -100px;
+    }
+  }
+  span:nth-child(3) {
+    right: -3%;
+    top: 26%;
+    animation: animationFramesFour 30s infinite linear;
+    &::before {
+      content: '';
+      background-position: -125px -200px;
+    }
+  }
+  span:nth-child(4) {
+    left: 30%;
+    top: 80%;
+    animation: animationFramesTwo 30s infinite linear reverse ;
+    animation-delay: 1s;
+    &::before {
+      content: '';
+      background-position: -200px -150px;
+    }
+  }
+  span:nth-child(5) {
+    right: 32%;
+    top: -5%;
+    animation: animationFramesThree 21s infinite linear;
+    &::before {
+      content: '';
+      background-position: 0px -175px;
+    }
+  }
+}

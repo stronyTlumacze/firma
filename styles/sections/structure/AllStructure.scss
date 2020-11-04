@@ -1,0 +1,90 @@
+.allStructure__container {
+  padding-top: 6rem;
+
+  @include media('>=tablet') {
+    padding-top: 8rem;
+  }
+
+  .allStructure__wrapper {
+    .allStructure__box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+    }
+
+    .allStructure__elements {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin-top: 2rem;
+
+      .allStructure__element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+
+        @include media('>=tablet') {
+          flex-direction: row;
+          max-width: 95%;
+        }
+
+        .allStructure__left {
+          text-align: center;
+
+          @include media('>=tablet') {
+            margin-right: 6rem;
+            min-width: 14rem;
+          }
+
+          svg {
+            max-width: 16rem;
+          }
+
+          .structure__icon {
+            width: 3rem;
+            height: auto;
+            fill: $blueColor;
+
+            @include media('>=tablet') {
+              width: 4rem;
+            }
+          }
+        }
+
+        .allStructure__right {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem 0;
+
+          @include media('>=tablet') {
+            padding: 0rem;
+          }
+
+          h3 {
+            font-size: 20px;
+            align-self: flex-start;
+
+            @include media('>=tablet') {
+              font-size: 32px;
+            }
+          }
+
+          p {
+            margin-top: 0.5rem;
+            color: $blueColor;
+
+            span {
+              font-weight: 700;
+              color: $blueColorDark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

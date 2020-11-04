@@ -1,0 +1,177 @@
+$blueColor: #1e1c24;
+$blueColorDark: #000000;
+$whiteColor: #fff;
+$redColor: #fd2539;
+
+// $blueColor: #6159e6;
+// $blueColorDark: #243e64;
+
+.main__two {
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: $blueColorDark;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+
+  @include media('>=tablet') {
+    margin-left: 1rem;
+    font-size: 48px;
+    text-align: left;
+  }
+}
+
+.blueDarkColorClass {
+  color: #243e64;
+  font-weight: 700;
+}
+
+.buttonBlue {
+  color: $blueColor;
+  // padding: .7rem;
+  cursor: pointer;
+  background: $blueColor;
+  border-radius: 50rem;
+  color: $whiteColor;
+  border: 0.15rem solid transparent;
+  transition: 0.2s;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+
+  a {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 50rem;
+  }
+
+  &:hover {
+    background: $whiteColor;
+    border: 0.15rem solid $blueColor;
+  }
+
+  &:hover a {
+    color: $blueColor;
+  }
+}
+
+.buttonRed {
+  color: $blueColor;
+  // padding: .7rem;
+  cursor: pointer;
+  background: #fd2e41;
+  border-radius: 50rem;
+  color: $whiteColor;
+  border: 0.15rem solid transparent;
+  transition: 0.2s;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+
+  a {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 50rem;
+  }
+
+  &:hover {
+    background: $whiteColor;
+    border: 0.15rem solid #fd2e41;
+  }
+
+  &:hover a {
+    color: #fd2e41;
+  }
+}
+
+.mark__black {
+  background-color: #fff;
+  height: 100%;
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transition: .2s;
+}
+
+.bg-color-red {
+  background-color: #fd2e41;
+  color: #fff;
+  padding: 0 .3rem;
+  font-weight: 700;
+}
+
+@keyframes animationFramesTwo {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
+  }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes animationFramesThree {
+  0% {
+    transform: translate(165px, -179px);
+  }
+  100% {
+    transform: translate(-346px, 617px);
+  }
+}
+
+@keyframes animationFramesFour {
+  0% {
+    transform: translate(-300px, 151px) rotate(0deg);
+  }
+  100% {
+    transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes gogo {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 17%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

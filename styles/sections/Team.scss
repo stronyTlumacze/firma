@@ -1,0 +1,200 @@
+.team__container {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  position: relative;
+
+  .team__wrapper {
+    .team__box {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+    }
+    // .team__numbers {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+
+    //   @include media('>=phone') {
+    //     flex-direction: row;
+    //     width: 21rem;
+    //     margin: 0 auto;
+    //     justify-content: space-between;
+    //   }
+
+    //   .team_number {
+    //     color: $blueColor;
+    //     text-align: center;
+    //     margin-top: 2rem;
+
+    //     p:nth-child(1) {
+    //       font-size: 2rem;
+    //     }
+
+    //     .team__icon {
+    //       width: 3rem;
+    //       height: auto;
+    //       margin-bottom: 0.7rem;
+
+    //       @include media('>=tablet') {
+    //         width: 4rem;
+    //         margin-bottom: 1rem;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .team__story {
+      background: #fff;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+    }
+
+    .team__people {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+
+      @include media('>=tablet') {
+        margin: 3rem auto 0rem auto;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+        margin-top: 6rem;
+      }
+
+      @include media('>=laptop') {
+      }
+
+      .team__person {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @include media('>=laptop') {
+          width: 100%;
+        }
+
+        .team__photo {
+          max-width: 12rem;
+          max-height: 16rem;
+          align-self: center;
+        }
+
+        .team__photo-right {
+          transform: rotateY(180deg);
+        }
+
+        .team__info {
+          h3 {
+            margin: 1rem 0;
+            color: $blueColorDark;
+            position: relative;
+            display: inline-block;
+          }
+
+          p {
+            color: $blueColor;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 3rem;
+
+          @include media('>=phone') {
+            margin-top: 0rem;
+          }
+        }
+      }
+    }
+  }
+
+  .team__elementy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+
+    & > * {
+      position: absolute;
+      z-index: -10;
+    }
+
+    span {
+      position: absolute;
+      &::before {
+        content: '';
+        background-image: url('../../public/flagi.png');
+        width: 25px;
+        height: 25px;
+        display: block;
+      }
+    }
+
+    span:nth-child(1) {
+      top: 21%;
+      left: 22%;
+      position: absolute;
+      animation: animationFramesTwo 19s infinite linear;
+      &::before {
+        background-position: -100px 0px;
+      }
+    }
+
+    span:nth-child(2) {
+      bottom: 27%;
+      left: 7%;
+      animation: animationFramesFour 19s infinite linear;
+      &::before {
+        content: '';
+        background-position: -25px -125px;
+      }
+    }
+    span:nth-child(3) {
+      right: -3%;
+      top: 26%;
+      animation: animationFramesFour 30s infinite linear;
+      &::before {
+        content: '';
+        background-position: -225px -225px;
+      }
+    }
+    span:nth-child(4) {
+      left: 30%;
+      top: 80%;
+      animation: animationFramesTwo 30s infinite linear reverse;
+      animation-delay: 1s;
+      &::before {
+        content: '';
+        background-position: -0px -200px;
+      }
+    }
+    span:nth-child(5) {
+      right: 32%;
+      top: -5%;
+      animation: animationFramesThree 21s infinite linear;
+      &::before {
+        content: '';
+        background-position: -250px -100px;
+      }
+    }
+    span:nth-child(6) {
+      right: 32%;
+      bottom: -5%;
+      animation: animationFramesFour 30s infinite linear;
+      &::before {
+        content: '';
+        background-position: -150px -250px;
+      }
+    }
+  }
+}

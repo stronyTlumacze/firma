@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-direction: column-reverse;
+  align-items: center;
+  min-height: 10rem;
+  border-top: 0.1rem solid #ebedf0;
+  background-color: #fd2e41;
+
+  @include media('>=570px') {
+    flex-direction: row;
+  }
+  @include media('>=tablet') {
+    padding: 1rem 7rem;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .copy {
+    font-size: 0.8rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include media('>=570px') {
+      align-items: flex-end;
+    }
+  }
+}

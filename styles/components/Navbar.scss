@@ -1,0 +1,185 @@
+nav {
+  .menu {
+    transform: translateY(-20px);
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    right: 5vw;
+    top: 20px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
+  .menu.active {
+    width: 13rem;
+
+    @include media('<tablet') {
+      height: 18rem;
+      max-width: 13rem;
+
+      .s-menuContent {
+        border: 1px solid black;
+      }
+    }
+
+    @include media('>=tablet') {
+      width: 29rem;
+    }
+  }
+  .menu.active .menuContent *,
+  .menu.active .s-menuContent * {
+    opacity: 1;
+  }
+  .menu.active span i:nth-child(1) {
+    transform: rotate(-45deg) translate(0%, -50%);
+    top: 50%;
+  }
+  .menu.active span i:nth-child(2) {
+    opacity: 0;
+    transition: 0s;
+  }
+  .menu.active span i:nth-child(3) {
+    transform: rotate(45deg) translate(0%, -50%);
+    top: 50%;
+  }
+  .menu span {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: #000000;
+    z-index: 1;
+  }
+  .menu span i {
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 45%;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .menu span i:nth-child(1) {
+    top: 40%;
+  }
+  .menu span i:nth-child(2) {
+    top: 50%;
+  }
+  .menu span i:nth-child(3) {
+    top: 60%;
+  }
+  .menu .menuContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    right: 0px;
+    text-align: center;
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+    }
+  }
+
+  .menu .menuContent ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 60px;
+
+    background: #fff;
+    border-right: none;
+  }
+  .menu .menuContent ul li {
+    display: flex;
+    color: #2d3235;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+  }
+
+  .menu .menuContent ul li:hover {
+    background-color: #ceecfc;
+  }
+
+  .menu .menuContent ul li a {
+    color: $blueColorDark;
+    height: 100%;
+    width: 100%;
+  }
+
+  // small menu
+  .s-menuContent {
+    display: none;
+    background-color: #fff;
+    border: 1px solid transparent;
+    padding-bottom: 1rem;
+
+    ul {
+      padding-top: 3.4rem;
+      padding-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        height: 2rem;
+        line-height: 2rem;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          background-color: #ceecfc;
+        }
+
+        a {
+          position: relative;
+          color: $blueColorDark;
+
+          &::before,
+          &::after {
+            content: '';
+            height: 2px;
+            width: 30px;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+            opacity: 0;
+            transition: 0.3s ease;
+          }
+
+          &::before {
+            left: -5rem;
+          }
+
+          &::after {
+            right: -5rem;
+          }
+
+          &:hover::before {
+            left: -3rem;
+            opacity: 1;
+          }
+          &:hover::after {
+            right: -3rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    img {
+      transition: opacity 0.3s ease 0.1s;
+      margin-top: 0.7rem;
+    }
+
+    @include media('<tablet') {
+      display: block;
+    }
+  }
+}

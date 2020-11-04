@@ -1,0 +1,141 @@
+@import './normalize.scss';
+@import 'utils/mixin.scss';
+@import 'utils/breakpoints.scss';
+@import 'utils/reusable.scss';
+@import 'utils/scroll.scss';
+@import 'utils/404.scss';
+@import 'utils/error.scss';
+
+@import 'components/Footer.scss';
+@import 'components/Navbar.scss';
+@import 'components/Intro.scss';
+@import 'components/Loader.scss';
+@import 'components/Grid.scss';
+@import 'components/Video.scss';
+@import 'components/Popup.scss';
+
+@import 'sections/Welcome.scss';
+@import 'sections/GeneralInfo.scss';
+@import 'sections/Offer.scss';
+@import 'sections/Price.scss';
+@import 'sections/Team.scss';
+@import 'sections/Contact.scss';
+
+//ebook
+@import 'sections/ebook/EbookInfo.scss';
+@import 'sections/ebook/GetEbook.scss';
+//steps
+@import 'sections/steps/StepsInfo.scss';
+@import 'sections/steps/AllSteps.scss';
+//structure
+@import 'sections/structure/StructureInfo.scss';
+@import 'sections/structure/AllStructure.scss';
+
+@font-face {
+  //   font-family: maelstrom;
+  //   src: url('../public/font/maelstrom-bold.woff') format('truetype');
+}
+
+// Font-size
+$min_width: 300px;
+$max_width: 1600px;
+$min_font: 16px;
+$max_font: 26px;
+
+html {
+  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-size: 18px;
+  overflow-x: hidden;
+  // overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden !important;
+  user-select: none;
+  // max-width: 1400px;
+  margin: 0 auto;
+  // overflow-y: hidden;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6rem;
+
+  @include media('>=tablet') {
+    font-size: 24px;
+    line-height: 1.8rem;
+  }
+}
+
+.bg-fixed {
+  background: url('../public/finalbg.png');
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#__next {
+  height: 100%;
+}
+
+.layout__container {
+  // background-color: rgb(179, 179, 208);
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  //   @include media("<=tablet") {
+  //      height: 80%;
+  //   }
+
+  // @include media("<=654px") {
+  //     width: 100%;
+  //   }
+
+  // &::before,
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 1px;
+  //   background-color: rgb(241 240 255);
+  //   z-index: -2;
+  // }
+
+  // &::before {
+  //   left: 10%;
+  // }
+  // &::after {
+  //   right: 10%;
+  // }
+}
+
+.layout__wrapper {
+  // background-color: rgb(132, 132, 226);
+  height: 100%;
+  width: 100%;
+  min-height: calc(100vh - 10rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include media('>=tablet') {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,88 @@
+// ***************************************
+// ***************************************
+// ***************************************
+// SCROLL
+
+::-webkit-scrollbar {
+  // width: 10px !important; // 1
+}
+
+// normal scroll styling
+body::-webkit-scrollbar-track {
+  // background-color: #fff; //2
+}
+body::-webkit-scrollbar-thumb {
+    // background-color: $blueColorDark;  //3
+    // outline: 1px solid slategrey;
+}
+
+
+// Zniknij normalny
+//   html.has-scroll-smooth {
+//     overflow: hidden;
+//   }
+// Zniknij normalny
+//   .has-scroll-smooth body {
+//     overflow: hidden;
+//   }
+
+// LIBRARY
+// zeby nie v
+//   html.has-scroll-dragging {
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//   }
+
+//   .has-scroll-smooth [data-scroll-container] {
+//     min-height: 100vh;
+//   }
+
+// background
+//   .c-scrollbar {
+//     //   background: red;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     width: 12px;
+//     height: 100%;
+//     transform-origin: center right;
+//     transition: transform 0.3s, opacity 0.3s;
+//     opacity: 1;
+//   }
+
+// background and scroll ?
+//   .c-scrollbar:hover,
+//   .has-scroll-scrolling .c-scrollbar,
+//   .has-scroll-dragging .c-scrollbar {
+//     opacity: 1;
+//   }
+
+// scroll
+//   .c-scrollbar_thumb {
+//     transition: 0.02s; // szybkosc scrolla
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: #92f61a;
+//     mix-blend-mode: difference;
+//     opacity: 0.5;
+//     width: 8px;
+//     //height: 50px !important; // height of scrollbar_thumb
+//     border-radius: 10px;
+//     margin: 2px;
+//     cursor: -webkit-grab;
+//     cursor: grab;
+//   }
+
+// hover scroll
+//   .c-scrollbar_thumb:hover,
+//   .c-scrollbar_thumb:active {
+//     background-color: red;
+//   }
+
+//   .has-scroll-dragging .c-scrollbar_thumb {
+//     cursor: -webkit-grabbing;
+//     cursor: grabbing;
+//   }

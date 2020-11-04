@@ -1,0 +1,154 @@
+.contact__container {
+  margin: 0rem 0 2rem 0;
+  position: relative;
+  padding: 2rem 0;
+
+  @include media('>=tablet') {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: center;
+
+    .contact__box {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      max-width: 90vw;
+      margin: 0 1rem;
+      background: #fcfcfd;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+
+      @include media('>=tablet') {
+        flex-direction: row;
+        max-width: 60rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        @include media('>=tablet') {
+          width: 100%;
+        }
+
+        input,
+        textarea {
+          border: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+          margin-top: 1rem;
+          outline: none;
+          padding-left: 1rem;
+          background: #fcfcfd;
+          color: $blueColorDark;
+        }
+
+        input {
+          line-height: 2rem;
+          color: $blueColor;
+        }
+
+        textarea {
+          padding: 1rem;
+        }
+
+        .button {
+          color: #fff;
+          padding: .5rem;
+          cursor: pointer;
+          background: #3d8e1c;
+          border-radius: 50rem;
+          border: 0.15rem solid transparent;
+          transition: 0.2s;
+          display: inline-block;
+          align-self: center;
+          margin: 0 auto;
+          margin-top: 1rem;
+          width: 9rem;
+
+          &:hover {
+            background: #fff;
+            color: #3d8e1c;
+            border: 0.15rem solid #3d8e1c;
+          }
+        }
+      }
+
+      .contact__text {
+        margin-top: 2rem;
+        text-align: center;
+
+        h2 {
+          margin-bottom: 1rem;
+          color: $blueColorDark;
+        }
+
+        p {
+          color: $blueColor;
+        }
+
+        h3 {
+          margin-top: 1rem;
+          font-weight: 400;
+          font-size: 1rem;
+          color: $blueColorDark;
+        }
+
+        @include media('>=tablet') {
+          margin: 0 0 0 2rem;
+          width: 100%;
+          text-align: left;
+          padding: 1.2rem 1rem;
+        }
+      }
+    }
+  }
+
+  .contact__elementy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+
+    & > * {
+      position: absolute;
+       z-index: -10;
+    }
+
+    svg:nth-child(1) {
+      height: 2rem;
+      fill: $blueColor;
+      top: 21%;
+      right: 22%;
+      z-index: -1;
+      animation: animationFramesTwo 19s infinite linear;
+    }
+    svg:nth-child(2) {
+      height: 1rem;
+      top: 27%;
+      left: 8%;
+      z-index: -1;
+      animation: animationFramesFour 19s infinite linear;
+    }
+    svg:nth-child(3) {
+      height: 3rem;
+      right: 9%;
+      top: 26%;
+      z-index: -1;
+      animation: jump 13s infinite linear;
+      fill: $blueColor
+    }
+    svg:nth-child(4) {
+      height: 3rem;
+      top: 47%;
+      left: 7%;
+      z-index: -1;
+      animation: animationFramesTwo 21s infinite linear;
+    }
+  }
+}
