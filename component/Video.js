@@ -18,7 +18,7 @@ function Video() {
 
       setOpen(true);
       localStorage.setItem('initialOpen', 'true');
-    }, 1000);
+    }, 2000);
   }, []);
 
   useEffect(() => {

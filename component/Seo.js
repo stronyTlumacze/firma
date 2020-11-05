@@ -21,11 +21,11 @@ export default function SEO({ title, description = '' }) {
       {/* <meta name="google-site-verification" content="18Rk8eHm6UY7WCuyCNSJdjPtbJZrHF_LH9GMN9DPnbg" /> */}
 
       {/* character encoding for the HTML  */}
-      <meta charset='utf-8' />
-      <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+      <meta charSet='utf-8' />
+      <meta httpEquiv='content-type' content='text/html; charset=utf-8' />
 
       {/* Instruct Internet Explorer to use its latest rendering engine */}
-      <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+      <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 
       {/* Tell search engines that this URL is the main page and avoid indexing other duplicate page URLs */}
       {/* <link rel='canonical' href='https://yourwebsite.com/' /> */}

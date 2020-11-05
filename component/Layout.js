@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Intro from './Intro';
-import Grid from './Grid';
-import { Player } from 'video-react';
+// import Grid from './Grid';
+// import { Player } from 'video-react';
 import Video from '../component/Video';
 import Popup from '../component/Popup';
 
 import NewContextProvider from '../context/index';
 
-function Layout({ children }) {
+function Layout({children}) {
   // const [showVideo, setShowVideo] = useState(false);
   // const [playVideo, setPlayVideo] = useState(false);
   // const videoPlayer = useRef(null);
@@ -32,7 +32,6 @@ function Layout({ children }) {
     if (localStorage.getItem('popup') === 'true') {
       return;
     } else {
-      // document.documentElement.style.overflowY = 'hidden';
       setPop(true);
     }
   };
@@ -59,7 +58,7 @@ function Layout({ children }) {
       </div> */}
 
         {/* VIDEO */}
-        {children.key === '/' && <Video />}
+        {children.props.children.key === '/' && <Video />}
 
         {/* POPUP */}
         {pop && <Popup setPop={setPop} />}

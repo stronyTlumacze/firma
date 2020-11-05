@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }) {
     localStorage.removeItem('initialOpen')
     localStorage.removeItem('popup')
   }, [])
-
+  
   if (router.pathname === '/404') {
     return <NoPage />;
   } else {

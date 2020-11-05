@@ -68,7 +68,7 @@ function Welcome() {
               </div>
             </div>
             <p className='e-book buttonRed'>
-              <Link href='/ebook' class='e-book buttonBlue'>
+              <Link href='/ebook' className='e-book buttonBlue'>
                 Darmowy E-book
               </Link>
             </p>
@@ -81,11 +81,11 @@ function Welcome() {
       {/* <img src='./tlooo.png' className='welcome__tlo' /> */}
 
       <div className='welcome__elementy'>
-        <span class="sport-icon flag-pl"></span>
-        <span class="sport-icon flag-pl"></span>
-        <span class="sport-icon flag-pl"></span>
-        <span class="sport-icon flag-pl"></span>
-        <span class="sport-icon flag-pl"></span>
+        <span className="sport-icon flag-pl"></span>
+        <span className="sport-icon flag-pl"></span>
+        <span className="sport-icon flag-pl"></span>
+        <span className="sport-icon flag-pl"></span>
+        <span className="sport-icon flag-pl"></span>
       </div>
     </div>
   );
