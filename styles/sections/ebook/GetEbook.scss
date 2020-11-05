@@ -29,6 +29,21 @@
       form {
         display: flex;
         flex-direction: column;
+        position: relative;
+
+        .getBook__error, .getBook__ok {
+          color: red;
+          position: absolute;
+          top: -.6rem;
+          font-size: .8rem;
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+        }
+        
+        .getBook__ok {
+          color: green;
+        }
 
         input {
           border: none;

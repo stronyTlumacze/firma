@@ -47,7 +47,7 @@ const Home = () => {
       variants={fade}
       // onAnimationComplete={() => console.log('tak')}
     >
-      <SEO title='Page one' description='Description' />
+      <SEO title='SDT - home' description='Strony dla tlumaczy. Strona glowna.' />
       <Welcome />
       <GeneralInfo />
       <Offer />

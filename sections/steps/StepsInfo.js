@@ -23,7 +23,6 @@ function StepsInfo() {
 
         <div className='steps__manage'>
           <div className='steps__image'>
-            {/* <img src='./ebook.png' alt='steps image' /> */}
             <StepsImg />
           </div>
           <div className='steps__text'>

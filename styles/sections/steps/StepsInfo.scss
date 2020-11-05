@@ -68,9 +68,20 @@
       }
       .steps__image {
         width: 100%;
-        img {
-          width: 100%;
-          max-width: 24rem;
+        text-align: center;
+
+        svg {
+          max-width: 23rem;
+
+          @include media('>=tablet') {
+            width: 100%;
+            max-width: none;
+          }
+        }
+
+        @include media('>=tablet') {
+          text-align: left;
+          width: 48%;
         }
       }
       .steps__text {

@@ -440,7 +440,7 @@ export const recommendation = [
     title: 'Sekcja FAQ',
     bad: 'Brak sekcji FAQ. ',
     good:
-      'Sekcja FAQ jest idealnym rozwiazaniem dla podstawowych badz najczesciej zadawanych pytan. Pozwoli nam to na zautomatyzowanie pracy.',
+      'Sekcja FAQ jest idealnym rozwiazaniem dla podstawowych badz najczesciej zadawanych pytan.',
     svg: '8-faq',
   },
   {

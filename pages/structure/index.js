@@ -4,6 +4,7 @@ import AllStructure from '../../sections/structure/AllStructure';
 import Contact from '../../sections/Contact';
 import { motion } from 'framer-motion';
 import { NewContext } from '../../context/index'
+import SEO from '../../component/Seo';
 
 const fade = {
   initial: {
@@ -33,6 +34,7 @@ function index() {
       exit='exit'
       variants={fade}
     >
+        <SEO title='SDT - Struktura strony' description='Strony dla tlumaczy. Struktura strony.' />
       <StructureInfo />
       <AllStructure />
       <Contact />

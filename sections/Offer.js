@@ -110,7 +110,7 @@ function Offer() {
             </div>
             <div className='element__right'>
               <h3 className='element__title'>
-                60 krokow ktore tworza Wirtualna Wizytowke
+                60 krokow ktore tworza Interaktywna Wizytowke
               </h3>
 
               <p>
@@ -134,8 +134,8 @@ function Offer() {
                 Progresywna aplikacja, dzieki ktorej strona bedzie dzialac duzo
                 szybciej, pozwalajac na zapis danych po stronie klienta przy
                 pierwszych wizytach. PWA pozwala takze na to by Panstwa
-                Wirtualna Wizytowka dzialala nawet gdy nie bedzie polaczenia z
-                internetem
+                Interaktywna Wizytowka dzialala nawet gdy nie bedzie polaczenia
+                z internetem
               </p>
               <br />
               <p>
@@ -206,7 +206,7 @@ function Offer() {
                 </p>
                 <br />
                 <p>
-                  &#40; Z prawej strony przyklad tego jak moze wygladac Google
+                  &#40; Przyklad tego jak moze wygladac Google
                   Moja Firma &#41;
                 </p>
               </div>
@@ -230,12 +230,13 @@ function Offer() {
             </div>
             <div className='element__right'>
               <div>
-                <Typed
-                  strings={['Content Marketing i Social Media']}
-                  typeSpeed={50}
-                  loop
-                />
-                <br />
+                <p className='typed-ebook'>
+                  <Typed
+                    strings={['Content Marketing i Social Media']}
+                    typeSpeed={50}
+                    loop
+                  />
+                </p>
                 <p>Przygotowalismy dla Panstwa E-book. </p>
                 <p>
                   Jest to pelen informacji zbior najlepszych zasad dotyczacych

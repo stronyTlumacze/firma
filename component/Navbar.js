@@ -36,7 +36,7 @@ function Navbar() {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={() => setOpen(!open)}>
-              <Link href='/steps'>61 Krokow</Link>
+              <Link href='/steps'>60 Krokow</Link>
             </li>
             <li onClick={() => setOpen(!open)}>
               <Link href='/structure'>Struktura</Link>
@@ -53,7 +53,7 @@ function Navbar() {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={() => setOpen(!open)}>
-              <Link href='/steps'>61 Krokow</Link>
+              <Link href='/steps'>60 Krokow</Link>
             </li>
             <li onClick={() => setOpen(!open)}>
               <Link href='/structure'>Struktura</Link>

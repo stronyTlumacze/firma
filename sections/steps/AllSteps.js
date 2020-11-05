@@ -38,102 +38,109 @@ function AllSteps() {
         }),
     });
 
-    let allGeneralBoxes = document.querySelectorAll('.g-step__wrapper .steps_box');
+    let allGeneralBoxes = document.querySelectorAll(
+      '.g-step__wrapper .steps_box'
+    );
 
     ScrollTrigger.batch(allGeneralBoxes, {
       onEnter: (batch) =>
-        gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
+        gsap.to(batch, {
+          opacity: 1,
+          stagger: 0.15,
+          overwrite: true,
+        }),
       onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+        gsap.set(batch, {
+          opacity: 0,
+          overwrite: true,
+        }),
       onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
+        gsap.to(batch, {
+          opacity: 1,
+          stagger: 0.15,
+          overwrite: true,
+        }),
       onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+        gsap.set(batch, {
+          opacity: 0,
+          overwrite: true,
+        }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allGeneralBoxes, { opacity: 0 })
     );
 
-    
     let allEOBoxes = document.querySelectorAll('.s-step__wrapper .steps_box');
 
     ScrollTrigger.batch(allEOBoxes, {
       onEnter: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allEOBoxes, { opacity: 0 })
     );
 
-    
-    let allMediaBoxes = document.querySelectorAll('.m-step__wrapper .steps_box');
+    let allMediaBoxes = document.querySelectorAll(
+      '.m-step__wrapper .steps_box'
+    );
 
     ScrollTrigger.batch(allMediaBoxes, {
       onEnter: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allMediaBoxes, { opacity: 0 })
     );
 
-    
-    let allPecialBoxes = document.querySelectorAll('.ss-step__wrapper .steps_box');
+    let allPecialBoxes = document.querySelectorAll(
+      '.ss-step__wrapper .steps_box'
+    );
 
     ScrollTrigger.batch(allPecialBoxes, {
       onEnter: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allPecialBoxes, { opacity: 0 })
     );
 
-    
     let allEffBoxes = document.querySelectorAll('.e-step__wrapper .steps_box');
 
     ScrollTrigger.batch(allEffBoxes, {
       onEnter: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allEffBoxes, { opacity: 0 })
     );
 
-        
-    let allRecomBoxes = document.querySelectorAll('.r-step__wrapper .steps_box');
+    let allRecomBoxes = document.querySelectorAll(
+      '.r-step__wrapper .steps_box'
+    );
 
     ScrollTrigger.batch(allRecomBoxes, {
       onEnter: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, overwrite: true }),
+      onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, overwrite: true }),
     });
     ScrollTrigger.addEventListener('refreshInit', () =>
       gsap.set(allRecomBoxes, { opacity: 0 })

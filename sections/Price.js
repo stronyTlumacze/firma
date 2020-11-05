@@ -4,6 +4,7 @@ import Typed from 'react-typed';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+import { Ztamp } from '../svg/Svg'
 
 function Price() {
   useEffect(() => {
@@ -56,12 +57,7 @@ function Price() {
           <div className='procent'>
             <p>
               {' '}
-              <Typed
-                strings={['0%']}
-                typeSpeed={80}
-                backSpeed={80}
-                loop
-              />
+              <Typed strings={['0%']} typeSpeed={80} backSpeed={80} loop />
             </p>
           </div>
           <p className='no__pay bg-color-red'>Na poczatku nie placisz nic!</p>
@@ -77,7 +73,7 @@ function Price() {
               <Checked /> Struktura 14 sekcji
             </p>
             <p>
-              <Checked /> 61 Krokow
+              <Checked /> 60 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma
@@ -94,14 +90,14 @@ function Price() {
           </div>
           {/* 2 */}
           <div className='price__info'>
-            <img src='./pakiet2.png' />
+            <Ztamp />
             <p className='pakiet__title'>Pakiet interaktywny</p>
             <h3 className='price'>2500 PLN</h3>
             <p>
               <Checked /> Struktura 14+ sekcji
             </p>
             <p>
-              <Checked /> 61 Krokow
+              <Checked /> 60 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma
@@ -123,26 +119,27 @@ function Price() {
             </p>
           </div>
           {/* 3 */}
-          <div className='price__info coming'>
+          <div className='price__info'>
+            <img src='./pakiet2.png' />
             <p className='pakiet__title'>Pakiet PRO</p>
-            <h3 className='price'>Coming soon #2021</h3>
+            <h3 className='price'>3000 PLN</h3>
             <p>
               <Checked /> Struktura 14+ sekcji
             </p>
             <p>
-              <Checked /> 61 Krokow
+              <Checked /> 60 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma
             </p>
             <p className='interaktyvny'>
               <span>
-                <Checked /> Interaktywne komponenty wizualne
+                <Checked /> Interaktywne komponenty wizualne*
               </span>
             </p>
             <p className='interaktyvny'>
               <span>
-                <Checked /> Interaktywny pomocnik wizualny*
+                <Checked /> Podstrony*
               </span>
             </p>
             <p>
@@ -150,9 +147,10 @@ function Price() {
             </p>
             <br />
             <p className='maleinfo'>
-              * Wyswietlajace sie automatycznie pomocnik. Dajacy wskazowki i
-              dodatkowe informacje na temat firmy w zaleznosci od miejsca w
-              ktorym znajduje sie uzytkownik na stronie.
+              * Interaktywny Wizytowka + podstrony (max 5). Kazda podstrona
+              to miejsce na wieksza ilosc informacji i mozliwosc zatrzymania
+              wizytujacej osoby na dluzej. Dynamiczne przejscia nadadza
+              plynnosci uzytkowaniu i mila, przyjazna dla oka atmosfere.
             </p>
           </div>
         </div>

@@ -13,11 +13,11 @@ nav {
     z-index: 999;
   }
   .menu.active {
-    width: 13rem;
+    width: 17rem;
 
     @include media('<tablet') {
-      height: 18rem;
-      max-width: 13rem;
+      height: 21rem;
+      max-width: 17rem;
 
       .s-menuContent {
         border: 1px solid black;
@@ -128,8 +128,8 @@ nav {
       flex-direction: column;
 
       li {
-        height: 2rem;
-        line-height: 2rem;
+        height: 3rem;
+        line-height: 3rem;
         display: flex;
         justify-content: center;
 

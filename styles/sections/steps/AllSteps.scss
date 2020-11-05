@@ -48,6 +48,7 @@
           border-radius: 0.2rem;
           cursor: crosshair;
           will-change: transform;
+          opacity: 0;
 
           &:hover {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),

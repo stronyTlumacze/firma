@@ -3,6 +3,7 @@ import EbookInfo from '../../sections/ebook/EbookInfo';
 import Contact from '../../sections/Contact';
 import { motion } from 'framer-motion';
 import { NewContext } from '../../context/index'
+import SEO from '../../component/Seo';
 
 const fade = {
   initial: {
@@ -32,6 +33,7 @@ function Ebook() {
       exit='exit'
       variants={fade}
     >
+        <SEO title='SDT e-book' description='Strony dla tlumaczy. Darmowy e-book.' />
       <EbookInfo />
       <Contact />
     </motion.div>

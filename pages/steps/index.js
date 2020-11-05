@@ -4,6 +4,7 @@ import AllSteps from '../../sections/steps/AllSteps';
 import Contact from '../../sections/Contact';
 import { motion } from 'framer-motion';
 import { NewContext } from '../../context/index'
+import SEO from '../../component/Seo';
 
 const fade = {
   initial: {
@@ -33,6 +34,7 @@ function index() {
       exit='exit'
       variants={fade}
     >
+        <SEO title='SDT - 60 krokow' description='Strony dla tlumaczy. 60 krokow.' />
       <StepsInfo />
       <AllSteps />
       <Contact />
