@@ -1,5 +1,5 @@
 export const Ztamp = () => (
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 432 288' class=''>
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 432 288' className='ztamp'>
     <defs>
       <mask
         id='mask'

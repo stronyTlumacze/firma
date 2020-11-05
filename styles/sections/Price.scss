@@ -28,7 +28,7 @@
       }
       .procent {
         margin-top: 0.5rem;
-        
+
         p {
           font-size: 2rem;
           line-height: normal;
@@ -89,12 +89,11 @@
           padding-bottom: 1.5rem;
         }
 
-        svg {
-          transform: translate(2.3rem, -2.7rem) scale(.8);
+        .ztamp {
+          transform: translate(2.3rem, -2.7rem) scale(0.8);
           margin-bottom: -4.2rem;
           fill: #fd2e41;
         }
-
 
         .pakiet__title {
           font-weight: 700;
@@ -136,6 +135,25 @@
         .maleinfo {
           font-size: 0.7rem;
           line-height: 1rem;
+        }
+
+        .to-example {
+          text-align: center;
+          transform: translateY(1rem);
+          a {
+            background: $redColor;
+            padding: 0.5rem;
+            color: $whiteColor;
+            border: 1px solid transparent;
+            transition: .3s;
+            border-radius: .3rem;
+
+            &:hover {
+              background: $whiteColor;
+              color: $redColor;
+              border: 1px solid $redColor;
+            }
+          }
         }
       }
 
