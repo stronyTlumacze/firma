@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect, useRef } from 'react';
-import { Player, ControlBar } from 'video-react';
+// import { Player, ControlBar } from 'video-react';
 import { Trojkat, Bad } from '../svg/Svg';
 
 function Video() {
@@ -108,19 +108,19 @@ export default Video;
 // 1. https://github.com/vivekjne/video-player-react-youtube
 
 // 2. NORMALNY HTML INBUILT TEZ DZIALA - ale mniej ladny
-const R = () => (
-  <div
-    class='interactive open'
-    style={{ background: 'black', bottom: '15rem' }}
-  >
-    <span class='toggleVideo'></span>
-    <div>
-      <video width='322' height='182' controls>
-        <source src='./video2.mp4' type='video/mp4' />
-      </video>
-    </div>
-  </div>
-);
+// const R = () => (
+//   <div
+//     class='interactive open'
+//     style={{ background: 'black', bottom: '15rem' }}
+//   >
+//     <span class='toggleVideo'></span>
+//     <div>
+//       <video width='322' height='182' controls>
+//         <source src='./video2.mp4' type='video/mp4' />
+//       </video>
+//     </div>
+//   </div>
+// );
 
 // 3. TU LADNIE ALE PO DEPLOY ZLE DZIALA   https://video-react.js.org/
 

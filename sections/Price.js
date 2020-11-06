@@ -117,7 +117,7 @@ function Price() {
               sposob mozliwosc czystego zamieszczenia wiekszej ilosci informacji
               i odgornego budowania zaufania.
             </p>
-            <span className='to-example'><a href='https://prezentacja.vercel.app/' target="_blank">Przyklad</a></span>
+            <span className='to-example'><a href='https://prezentacja.vercel.app/' target="_blank" rel="noreferrer">Przyklad</a></span>
           </div>
           {/* 3 */}
           <div className='price__info'>
