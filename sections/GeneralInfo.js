@@ -75,35 +75,35 @@ function GeneralInfo() {
       <div className='generalInfo__wrapper'>
         <div className='generalInfo__box'>
           <h2 className='main__two g-main__two'>
-            <span className='mark__black'></span>PROBLEM JAKI ROZWIAZUJEMY
+            <span className='mark__black'></span>PROBLEM JAKI ROZWIĄZUJEMY
           </h2>
           <p>
-            Dzieki 3 letniej obserwacji poprawnego budowania stron, a takze tego
+            Dzięki 3 letniej obserwacji poprawnego budowania stron, a także tego
             jak nie powinny byc one twrzone,{' '}
-            <span style={{ fontWeight: '700' }}>udalo</span> nam sie stworzyc
-            idealne rozwiazanie na Panstwa potrzeby.
+            <span style={{ fontWeight: '700' }}>udało</span> nam się stworzyć
+            idealne rozwiązanie na Państwa potrzeby.
           </p>
           <p>
-            Struktura strony internetowej, ktora nazwalismy{' '}
+            Struktura strony internetowej, którą nazwaliśmy{' '}
             <span className='bg-color-red'>
-              Interaktywna Wizytowka
+              Interaktywną Wizytówką
             </span>
-            , zostala dostosowana do wymogow{' '}
+            , została dostosowana do wymogów{' '}
             <span style={{ fontWeight: '700' }}>Google z roku 2020</span> a
-            takze zmodyfikowana tak, by spelniala wszystkie niezbedne elementy,
-            o ktorych moge Panstwo sie dowiedziec{' '}
+            takze zmodyfikowana tak, by spełniała wszystkie niezbędne elementy,
+            o ktorych mogą Państwo sie dowiedzieć{' '}
             <a href='#offer' style={{ textDecoration: 'underline' }}>
-              ponizej
+              poniżej
             </a>
             .
           </p>
           <br />
           <p>
-            Naszym celem jest sprawic by{' '}
-            <span style={{ fontWeight: '700' }}>Panstwa firma</span> wskoczyla
+            Naszym celem jest sprawić by{' '}
+            <span style={{ fontWeight: '700' }}>Państwa firma</span> wskoczyła
             do
             <span style={{ fontWeight: '700' }}> TOP</span> najlepszych firm w
-            miescie.
+            mieście.
           </p>
         </div>
       </div>

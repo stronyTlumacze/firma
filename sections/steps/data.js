@@ -1,86 +1,86 @@
 export const general = [
   {
     title: 'Strona internetowa',
-    bad: `Tworzenie strony na bazie szablonu. Bardzo czesto ma to miejsce podczas uzywania CMS (np. WordPress). Strona jest nudna i powtarzalna.`,
-    good: `Tworzenie stron od samego poczatku. Wszystkie linie kodu sa zaprojektowane przez nas. Kazdy projekt to nowy pomysl ktory realizujemy ze 100% zaangazowaniem. '`,
+    bad: `Tworzenie strony na bazie szablonu. Bardzo często ma to miejsce podczas używania CMS (np. WordPress). Strona jest nudna i powtarzalna.`,
+    good: `Tworzenie stron od samego początku. Wszystkie linie kodu są zaprojektowane przez nas. Każdy projekt to nowy pomysł który realizujemy ze 100% zaangażowaniem. '`,
     svg: '1-vebcreation',
   },
   {
     title: '100% kontroli',
     bad:
-      'Wiele stron tworzonych jest na bazie zasady kopiuj-wklej. Jest praktyka naganna, nie dajaca w pelni wykorzystac to co daje nam czyste programowanie. Ponadto kontrola takiego kodu jest ograniczona.',
+      'Wiele stron tworzonych jest na bazie zasady kopiuj-wklej. Jest to praktyka naganna, nie dająca w pełni wykorzystać to co daje nam czyste programowanie. Ponadto kontrola takiego kodu jest ograniczona.',
     good:
-      'Kazda linie kodu piszemy sami. Dzieki temu kontrola nad strona jest w 100%. Duzo wieksza niz podczas uzywania pozornie latwych w obsludze, lecz wolniejszych CMS np. WordPress. Majac 100% kontrole, jestesmy w stanie dokonac wszystkiego co dusza zapragnie.',
+      'Każdą linię kodu piszemy sami. Dzięki temu kontrola nad stroną jest w 100%; Dużo większa niż podczas używania pozornie łatwych w obsłudze, lecz wolniejszych CMS np. WordPress. Mając 100% kontrolę, jesteśmy w stanie dokonńać wszystkiego co dusza zapragnie.',
     svg: '2-100percent',
   },
   {
-    title: 'Bezpieczenstwo',
+    title: 'Bezpieczeństwo',
     bad:
-      'Pierwszy i podstawowy kork to bezpieczenstwo. Pomimo roku 2020 statystyki wciaz pokazuja ze ponad 47% stron jest zabezpieczonych w zly sposob lub tych zabezpieczen brak.',
+      'Pierwszy i podstawowy krok to bezpieczeństwo. Pomimo roku 2020 statystyki wciąż pokazują ze ponad 47% stron jest zabezpieczonych w zły sposób lub tych zabezpieczeń brak.',
     good:
-      'Bezpieczna strona potrzebuje certyfikat SSL, sanityzacje danych i odpowiednia strukture kodu, ktora bedzie chronic przed nieproszonymi goscmi. Odpowiednie zabezpieczenia sa takze doceniane przez Google podczas wyszukiwan. Wedle Google, strony bez certyfikatu SSL sa pomijane.',
+      'Bezpieczna strona potrzebuje certyfikat SSL, sanityzację danych i odpowiednią strukturę kodu, która będzie chronić przed nieproszonymi gośćmi. Odpowiednie zabezpieczenia są także doceniane przez Google podczas wyszukiwań. Wedle Google, strony bez certyfikatu SSL są pomijane podczas indeksowania.',
     svg: '3-vebsafety',
   },
   {
     title: 'Obsluga bledow',
     bad:
-      'Brak obslugi bledow powoduje wysoki poziom niezadowolenia ze strony klienta. Nie ma nic gorszego niz nagle wyskakujacy blad ktory zatrzymuje cala interakcje klienta ze strona.',
+      'Brak obsługi błędów powoduje wysoki poziom niezadowolenia ze strony klienta. Nie ma nic gorszego niż nagle wyskakujący błąd który zatrzymuje całą interakcję klienta ze strona.',
     good:
-      'W przypadku jakichkolwiek bledow, jestesmy przygotowani na wyswietlenie przyjaznej informacje na ich temat, bez potrzeby blokowania calej strony. Umozliwy to utrzymanie interakcji klienta ze strona a takze uswiadomienie go o zaistnialym procesie.',
+      'W przypadku jakichkolwiek błędów, jesteśmy przygotowani na wyświetlenie przyjaznej informacji na ich temat, bez potrzeby blokowania całej strony. Umożliwy to utrzymanie interakcji klienta ze stroną a także uświadomi go o zaistniałym procesie.',
     svg: '3.5-error',
   },
   {
     title: 'Blad 404',
     bad:
-      'Kolejny wazne i czesto zapominany do obsluzenia blad wystepujacy gdy klient wejdzie na strone ktora nie istnieje na naszym adresie.',
+      'Kolejny ważny i często zapominany do obsłużenia błąd występujący gdy klient wejdzie na stronę która nie istnieje na naszym adresie.',
     good:
-      ' W przypadku wystapienia bledy przygotowalismy ladna grafike informujaca o zaistnialej sytuacji, pozwalajaca przejsc do innego miejsca strony.',
+      ' W przypadku wystąpienia błędu, przygotowaliśmy ładną grafikę informującą o zaistniałej sytuacji, pozwalającą przejśc bezpiecznie do innego miejsca strony.',
     svg: '3.5-404',
   },
   {
-    title: 'Zgodnosc przegladarek',
+    title: 'Zgodność przeglądarek',
     bad:
-      'Bardzo czesto tworcy stron skupiaja sie by dzialala ona tylko pod jedna popularna przegladarke.',
+      'Bardzo często twórcy stron skupiaja się by działała ona tylko pod jedną popularną przeglądarkę.',
     good:
-      'Zrobimy wszystko co w naszej mocy by nowo stworzona strona internetowa byla dostepna na przegladarkach takich jak: Google Chrome, Firefox, Opera, Edge.',
+      'Zrobimy wszystko co w naszej mocy by nowo stworzona strona internetowa była dostępna na przeglądarkach takich jak: Google Chrome, Firefox, Opera, Edge.',
     svg: '4a-browser',
   },
   {
     title: 'Silnik wyszukiwarki',
     bad:
-      'Brak zabezpieczen, brak obslugi bledow, brak odpowiedniej struktury kodu, brak potrzebnych elementow identyfikacyjnaych strony i wiele wiecej. Powoduje ze strona nie jest brana pod uwage i wyswietlana w rankingu.',
+      'Brak zabezpieczeń, brak obsługi błędów, brak odpowiedniej struktury kodu, brak potrzebnych elementów identyfikacyjnych strony i wiele więcej; Powoduje że strona nie jest brana pod uwagę i wyświetlana w rankingu.',
     good:
-      'Odpowiednio zadbamy o kazdy z elementow podczas tworzenia strony. Zadbamy takze o SEO. Pozwoli to wyszukiwarkom takim jak Google, Bing lub Yahoo, wyswietlic strone wysoko w rankingu',
+      'Odpowiednio zadbamy o każdy z elementów podczas tworzenia strony. Zadbamy także o SEO. Pozwoli to wyszukiwarkom takim jak Google, Bing lub Yahoo, wyświetlić stronę wysoko w rankingu',
     svg: 'engine',
   },
   {
-    title: 'Wyjatkowy design',
+    title: 'Wyjątkowy design',
     bad: 'Kopiuj/wklej design.',
     good:
-      'Nasze kreacje sa oryginalne, przyjazne dla oka i dostosowane do Panstwa potrzeb. Struktura kodu jaka dla Panstwa przygotowalismy zawiera wszystkie wazne elementy dla biznesu i jego rozwoju.',
+      'Nasze kreacje są oryginalne, przyjazne dla oka i dostosowane do Państwa potrzeb. Struktura kodu jaką dla Państwa przygotowaliśmy zawiera wszystkie ważne elementy dla biznesu i jego rozwoju.',
     svg: '4-customdesign',
   },
   {
-    title: 'Responsywnosc',
+    title: 'Responsywność',
     bad:
-      'Ponad 40% stron jest albo nie responsywnych albo responsywnych w bledny sposob.',
+      'Ponad 40% stron jest albo nieresponsywnych albo responsywnych w błędny sposób.',
     good:
-      'Strony responsywne wygladaja bardzo dobrze na roznych urzadzeniach o roznej wielkosci. Jestesmy specjalistami od dobrego wygladu.',
+      'Strony responsywne wyglądają bardzo dobrze na różnych urządzeniach o różnej wielkości. Jesteśsmy specjalistami od dobrego wyglądu.',
     svg: '5-rvd',
   },
   {
     title: 'Administracja',
     bad:
-      'Bardzo czesto strony tworzone sa i pozostawiane na pastwe losu. Uniknijmy tego.',
+      'Bardzo często strony tworzone są i pozostawiane na pastwę losu. Uniknijmy tego.',
     good:
-      'Administracja po stworzeniu strony trwa od 3 do 12 miesiecy.',
+      'Administracja po stworzeniu strony trwa od 3 do 12 miesięcy.',
     svg: '8-administration',
   },
   {
     title: 'Ciasteczka',
     bad: 'Brak ciasteczek.',
     good:
-      'Wszystkie niezbedne ciasteczka sa dodane do strony internetowej w przyjazny dla uzytkownika sposob.',
+      'Wszystkie niezbędne ciasteczka sa dodane do strony internetowej w przyjazny dla użytkownika sposób.',
     svg: '9-cookie',
   },
 ];
@@ -89,115 +89,115 @@ export const seo = [
   {
     title: 'SEO',
     bad:
-      'Brak SEO rowno sie braku dobrej pozycji strony w rezultatach wyszukiwania.',
+      'Brak SEO równa się braku dobrej pozycji strony w rezultatach wyszukiwania.',
     good:
-      'SEO, czyli Search Engine Optimization to obowiazek kazdej strony jesli zalezy nam na tym by ukazywala sie ona jak najlepiej podczas wyszukiwan. Przy uzyciu informacji od Panstwa na temat firmy i odpowiedniej analizie i dostosowaniu slow kluczowych, sprawimy ze strona wyswietli sie bardzo dobrze na pierwszej stronie wyszukiwan.',
+      'SEO, czyli Search Engine Optimization to obowiązek każdej strony jeśli zależy nam na tym by ukazywała się ona jak najlepiej podczas wyszukiwań. Przy użyciu informacji od Państwa na temat firmy i odpowiedniej analizie i dostosowaniu słów kluczowych, sprawimy że strona wyświetli się bardzo dobrze na pierwszej stronie wyszukiwań.',
     svg: '10-seo',
   },
   {
     title: 'Optymalizacja strony',
     bad:
-      'Brak generalnej optymalizacji spowoduje ze strona bedzie wolniejsza. Uzytkownicy ktorzy musza czekac dluzej niz 3 sekundy, rezynuja w 85% przypadku przechodza na inna strone.',
+      'Brak generalnej optymalizacji spowoduje że strona będzie wolniejsza. Użytkownicy którzy muszą czekać dłużej niż 3 sekundy, rezygnują w 85% przypadku przechodząc na inną stronę.',
     good:
-      'Kod jest zredukowany do minimum i napisany w poprawny i zrozumialy sposob, powodujac szybkie i plynne dzialanie strony. Uzytkownik po wejsciu na strone zrobiona przez nas, pozostanie na nie do samego konca.',
+      'Kod jest zredukowany do minimum i napisany w poprawny i zrozumiały sposób, powodując szybkie i płynne działanie strony. Użytkownik po wejściu na stronę zrobioną przez nas, pozostanie na niej do samego końca.',
     svg: '6-weboptimization',
   },
   {
-    title: 'Optymalizacja plikow',
+    title: 'Optymalizacja plików',
     bad:
-      'Brak optymalizacji plikow spowoduje ze strona bedzie dzialac wolniej (‘mulic’).',
+      'Brak optymalizacji plików spowoduje że strona będzie działać wolniej (‘mulić’).',
     good:
-      'Zmniejszamy wielkosc plikow bez utraty ich jakosci. Im mniejsza wielkosc tym szybsza strona.',
+      'Zmniejszamy wielkość plików bez utraty ich jakości. Im mniejsza wielkość tym szybsza strona.',
     svg: '7-fileoptimization',
   },
   {
-    title: 'Google My Business Page',
+    title: 'Google Moja Strona',
     bad:
-      'Pomimo dostepnosci wciaz nie uzywana wizytowka Google przez ponad 50% osob. A 99% nie wykorzystuje jej w 100%!',
+      'Pomimo dostępności wciąż nie używane narzędzie Google przez ponad 50% osób. A 99% nie wykorzystuje jej w 100%!',
     good:
-      'Uzyte w 100% narzedzie Googla, pozwalajace przedstawic informacje o firmie z jak najlepszej strony, uwzgledniajac bardzo wiele aspektow jak zdjecia, filmy, godziny pracy, serwis itp.',
+      'Użyte w 100% narzędzie Googla, pozwalające przedstawić informacje o firmie z jak najlepszej strony, uwzgledniając bardzo wiele aspektów jak zdjęcia, filmy, godziny pracy, serwis itp.',
     svg: '11-mybusiness',
   },
   {
     title: 'Geo Picture Tag',
-    bad: 'Brak jego uzycia.',
+    bad: 'Brak jego użycia.',
     good:
-      'Dodanmy geolokalizacja Panstwa firmy do kazdego zdjecia badz filmu, tak aby roboty Google mogly w latwiejszy sposob znalezc strone',
+      'Dodamy geolokalizacja Państwa firmy do każdego zdjęcia bądź filmu, tak aby roboty Google mogły w łatwiejszy sposób znaleźć stronę.',
     svg: '12-geotag',
   },
   {
     title: 'Google Search Console',
-    bad: 'Brak jego uzycia.',
+    bad: 'Brak jego użycia.',
     good:
-      'Jest to narzedzie do analizowania podstawowych informacje na temat statystyk strony i indeksowania przez roboty Google. Podlaczymy je dla Panstwa i sami tez z niego bedziemy korzystac przy tworzeniu strony.',
+      'Jest to narzędzie do analizowania podstawowych informacji na temat statystyk strony i indeksowania przez roboty Google. Podłączymy je dla Państwa i sami też z niego będziemy korzystać przy pozycjonowaniu strony.',
     svg: '4-googlesearch',
   },
   {
     title: 'Google Analytics',
-    bad: 'Brak jego uzycia.',
+    bad: 'Brak jego użycia.',
     good:
-      'Jest to narzedzie do analizowania zaawansowanych informacje na temat statystyk strony i indeksowania przez roboty Google. Podlaczymy je dla Panstwa i sami tez z niego bedziemy korzystac przy tworzeniu strony.',
+      'Jest to narzędzie do analizowania zaawansowanych informacje na temat statystyk strony i indeksowania przez roboty Google. Podłączymy je dla Państwa i sami tez z niego bedziemy korzystac przy pozycjonowaniu strony.',
     svg: '5-analytics',
   },
   {
     title: 'Google Maps',
     bad:
-      'Aktualnie widoczne na prawie kazdej stronie lecz czesto dodawane pod postacia zdjecia.',
+      'Aktualnie widoczne na prawie każdej stronie lecz często dodawane pod postacią zdęjcia.',
     good:
-      'Ta mala mapke ktora ukaze gdzie Panstwa firma znajduje sie na swiecie, zrobimy interaktywna z mozliwoscia poruszania jej.',
+      'Tą małą mapkę która ukaże gdzie Państwa firma znajduje się na świecie, zrobimy interaktywną z możliwością poruszania jej.',
     svg: '3-googlemap',
   },
   {
     title: 'Favicon',
-    bad: 'Brak ikonki w zakladce.',
+    bad: 'Brak ikonki w zakładce.',
     good:
-      'Niezbedna mala ikonka, ktora jest widoczna w zakladce przegladarki obok tytulu strony, bedzie dostepna dla Panstwa na kazdej stronie i podstronie.',
+      'Niezbędna mała ikonka, która jest widoczna w zakładce przeglądarki obok tytułu strony, będzie dostępna dla Państwa na każdej stronie i podstronie.',
     svg: '24-favicon',
   },
 ];
 
 export const media = [
   {
-    title: 'Zdjecia',
-    bad: 'Brak zdjec lub slaba grafika.',
+    title: 'Zdjęcia',
+    bad: 'Brak zdjęc lub słaba grafika.',
     good:
-      'Zapewnimy zoptymalizowane zdjecia z odpowiednio dodanymi efektami wizualnymi.',
+      'Zapewnimy zoptymalizowane zdjęcia z odpowiednio dodanymi efektami wizualnymi.',
     svg: '14-image',
   },
   {
     title: 'Slidery',
     bad: 'Brak slidera.',
     good:
-      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow. (opcja na zyczenie)',
+      'Responsywne i animowane slidery dla zdjęć, działające w wybranym kierunku, na klikniecie bądź dotyk palca na maniejszych urządzeniach. Jest to element nieobowiązkowy lecz świetnie się sprawdza np. przy ukazywaniu ostatnich opinii klientów. (opcja na życzenie)',
     svg: '15-slide',
   },
   {
     title: 'Galerie',
-    bad: 'Brak slidera.',
+    bad: 'Brak galerii.',
     good:
-      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow. (opcja na zyczenie)',
+      'Responsywne i animowane galerie. Po kliknięciu zdjęcie powiększy się na cały ekran. (opcja na życzenie)',
     svg: '13-gallery',
   },
   {
     title: 'Video',
-    bad: 'Brak filmow.',
+    bad: 'Brak filmów.',
     good:
-      'Zoptymalizowane video (YouTube lub Vimeo), z odpowiednio dodanymi efektami wizualnymi. Filmy przykuwaja uwage i dla niektorych sa lepszym zrodlem informacji niz czytany badz slyszany text.',
+      'Zoptymalizowane video (YouTube lub Vimeo), z odpowiednio dodanymi efektami wizualnymi. Filmy przykuwają uwagę i dla niektórych są lepszym źródłem informacji niż czytany bądź słyszany text.',
     svg: '14-video',
   },
   {
     title: 'Video prezentacyjne',
     bad: 'Brak video prezentacji.',
     good:
-      'Z udzialem ludzi, animowane, kolorowe lub na bialej tablicy rysowane, video prezentujace czym zajmuje sie firma. Jest to coraz bardziej popularny sposob na doracie do klienta. (opcja na zyczenie)',
+      'Z udziałem ludzi, animowane, kolorowe lub na bialej tablicy rysowane, video prezentujące czym zajmuje się firma. Jest to coraz bardziej popularny sposób na dotarcie do klienta. (opcja na zyczenie)',
     svg: '8-video',
   },
   {
     title: 'Ulotki, broszury, banery',
     bad:
-      'Brak dodatkowych elementow budujacych marke i zwiekszajacych sprzedaz.',
+      'Brak dodatkowych elementów budujących markę i zwiekszających sprzedaż.',
     good:
-      'Cudowne i chwytliwe elementy marketingowe, przygotowane na kazda okazje. Serwis jest dodatkowo platny. (opcja na zyczenie)',
+      'Cudowne i chwytliwe elementy marketingowe, przygotowane na każdą okazję. Serwis jest dodatkowo płatny. (opcja na życzenie)',
     svg: '12-flyer',
   },
 ];
@@ -207,43 +207,43 @@ export const special = [
     title: 'Intro',
     bad: 'Brak intro.',
     good:
-      'Wstepna mala wizualizacja, dzialajaca jak otwierajace sie drzwi.',
+      'Wstępna mała wizualizacja, działająca jak otwierające się drzwi.',
     svg: '18-intro',
   },
   {
-    title: 'Przejscie pomiedzy stronami',
+    title: 'Przejście pomiędzy stronami',
     bad:
-      'Brak plynnego przejscia miedzy stronami. Czesto przejsciu na kolejna strone uzytkownik niepotrzebnie widzi ladujace sie elementy strony.',
+      'Brak płynnego przejścia między stronami. Często przy przejściu na kolejną stronę użytkownik niepotrzebnie widzi ładujące się pokolei elementy strony.',
     good:
-      'Plynne i animowane przejscie pomiedzy stronami (np. z O nas do Kontakt), dajace uczucie dynamicznosci strony. Nasze strony laduja sie bardzo szybko. W polaczeniu z plynnym przejsciem nadadza efekt przyjemnego widoku.',
+      'Płynne i animowane przejście pomiędzy stronami (np. z Home do Kontakt), dające uczucie dynamiczności strony. Nasze strony ładuja się ekspresowo. W połączeniu z płynnym przejściem nadadzą efekt przyjemnego widoku.',
     svg: '19-transition',
   },
   {
     title: 'Natychmiastowe zaladowanie',
-    bad: 'Dlugo ladujace sie strony…',
+    bad: 'Długo ładujące sie strony…',
     good:
-      'Nasze strony i podstrony dzialaja natychmiastowo, bez zbednego ladowania. Sposob ktory uzywamy jest 3 razy szybszy niz CMS (np. WordPress).',
+      'Nasze strony i podstrony działają natychmiastowo, bez zbędnego ładowania. Sposób który używamy jest 3 razy szybszy niz CMS (np. WordPress).',
     svg: '20-instant',
   },
   {
     title: 'PWA',
     bad: 'Brak obslugi PWA',
     good:
-      'PWA to Progressive Web Application - pozwala m.in. by strona dzialala nawet gdy polaczenie internetowe jest zerwane.',
+      'PWA to Progressive Web Application - pozwala m.in. by strona działała nawet gdy połączenie internetowe jest zerwane.',
     svg: '1-pvaoffline',
   },
   {
     title: 'Mala aplikacja na telefon',
     bad: 'Brak konfiguracji',
     good:
-      'Mozliwosc zapisu strony pod postacia aplikacji na telefonie (wymaga zgody uzytkownika). Dzieki temu przy nastepnej wizycie, uzytkownik nie bedzie musial wpisywac adresu strony. Wystarczy jak kliknie na ikonke.',
+      'Możliwość zapisu strony pod postacią aplikacji na telefonie (wymaga zgody użytkownika). Dzięki temu przy nastepnęj wizycie, użytkownik nie będzie musiał wpisywać adresu strony. Wystarczy jak kliknie na ikonkę.',
     svg: '2-smalldevice',
   },
   {
     title: 'Formularz kontaktowy',
-    bad: 'Brak formularza kontaktowego rowny jest stracie klienta.',
+    bad: 'Brak formularza kontaktowego równy jest stracie klienta.',
     good:
-      'Tworzymy ladny i przyjazny formularz z mozliwoscia dodawania plikow.',
+      'Tworzymy ładny i przyjazny formularz z możliwością dodawania plików.',
     svg: '13-contactform',
   },
 ];
@@ -251,38 +251,38 @@ export const special = [
 export const effects = [
   {
     title: 'Animacje',
-    bad: 'Brak animacje. Budowanie tylko statycznych stron.',
+    bad: 'Brak animacji. Budowanie tylko statycznych stron.',
     good:
-      'Przyjemne dla oka animacje dla wybranch elementow. Animacje powinny byc dynamiczne i sprawiac by strona byla postrzegana plynnie. Przykuwaja oko.',
+      'Przyjemne dla oka animacje dla wybranch elementow. Animacje powinny byc dynamiczne i sprawiać by strona była postrzegana płynnie. Przykuwają oko.',
     svg: '17-animation',
   },
   {
-    title: 'Scroll - wyglad',
+    title: 'Scroll - wygląd',
     bad:
-      'Brak dostosowanego scrolla. Uzywanie scrolla zapewnionego przez przegladarke. Taki scroll wyglada zle i zajmuje za duzo miejsca.',
+      'Brak dostosowanego scrolla. Używanie scrolla zapewnionego przez przegladarkę. Taki scroll wygląda źle i zajmuje za dużo miejsca.',
     good:
-      'Zmniejszony i dostosowany do stylu strony scroll (widoczny przy prawym koncu okna). Bedzie idalnie plasowal sie w cala kompozycje strony. (opcja na zyczenie)',
+      'Zmniejszony i dostosowany do stylu strony scroll (widoczny przy prawym końcu okna). Będzie idalnie plasował się w całą kompozycję strony. (opcja na życzenie)',
     svg: '21-scroll',
   },
   {
     title: 'Scroll - pozycja',
-    bad: 'Brak zachowania pozycji scrolla. Strona wraca do poczatku.',
+    bad: 'Brak zachowania pozycji scrolla. Strona wraca do początku.',
     good:
-      'W przypadku zescrollowania w dol strony i przejscia na inna a potem powrotu, pozycja scrolla (miejsce uprzedniego zescrollowania) zostanie utrzymane',
+      'W przypadku zescrollowania w dół strony i przejścia na inną a potem powrotu, pozycja scrolla (miejsce uprzedniego zescrollowania) zostanie utrzymane.',
     svg: '22-scrollrestoration',
   },
   {
     title: 'Nawigacja/Menu',
-    bad: 'Nudna nawigacja. Czesto z bledami stylistycznymi.',
+    bad: 'Nudna nawigacja. Często z błędami stylistycznymi.',
     good:
-      'Delikatna nawigacja, ktora w zaleznosci od wybranej opcji, moze byc na gorze strony, z boku, poza strona badz schowana.',
+      'Delikatna nawigacja, która w zależności od wybranej opcji, może być na górze strony, z boku, poza stroną bądź schowana.',
     svg: '23-menu',
   },
   {
     title: 'Nawigacja +',
-    bad: 'Bazowanie tylko na nawigacji gornej.',
+    bad: 'Bazowanie tylko na nawigacji górnej.',
     good:
-      'Dodatkowe elementy, przyciski pozwalajace podrozwac po stronie plynniej i szybciej.',
+      'Dodatkowe elementy, przyciski pozwalające podróżować po stronie płynniej i szybciej.',
     svg: '19-navplus',
   },
 
@@ -290,147 +290,147 @@ export const effects = [
     title: 'Smart Object',
     bad: 'Brak smart object.',
     good:
-      'Obiekty odpowiednio wystylizowane w Photoshop, bedace idealnym miejscem na mockup lub parallax. Element nieobowiazkow ale dajacy przyjazny efekt. Idelany w przypadku promowania jednej rzeczy np. ksiazki. (opcja na zyczenie)',
+      'Obiekty odpowiednio wystylizowane w Photoshop, będące idealnym miejscem na mockup lub parallax. Element nieobowiązkowy ale dający przyjazny efekt. Idelany w przypadku promowania jednej rzeczy np. książki. (opcja na życzenie)',
     svg: '6-object',
   },
   {
     title: 'Mockup',
     bad: 'Brak mockup',
     good:
-      'Wasze logo, zdjecie, tresc badz inny element, ktory zechca Panstwo by umiescic na smart object. Np. moze to byc e-book, ktory jest rekomendacja z naszej strony dla sekcji Prezent. (opcja na zyczenie)',
+      'Wasze logo, zdjęcie, treść bądź inny element, który zechcą Państwo by umieścić na smart object. Np. może to być e-book, który jest rekomendacją z naszej strony dla sekcji Prezent. (opcja na życzenie)',
     svg: '7-mockup',
   },
   {
     title: 'Wskazowki',
     bad:
-      'Brak wskazowek. W przypadku zlozonych stron, brak wskazowek odnosnie kolejnych krokow, moze spowodowac szybkie zagubienie uzytkownika.',
+      'Brak wskazówek. W przypadku złożonych stron, brak wskazówek odnośnie kolejnych kroków, może spowodować szybkie zagubienie użytkownika.',
     good:
-      'Krotkie pojawiajace sie informacje odnosnie tego gdzie klient aktualnie jest, gdzie powinien przejsc na stronie itp. Element opcjonalny ale zawsze warty rozwazenia.',
+      'Krótkie pojawiające się informacje odnośnie tego gdzie klient aktualnie jest, gdzie powinien przejść na stronie itp. Element opcjonalny ale zawsze warty rozważenia.',
     svg: '16-prompt',
   },
   {
     title: 'Przyjazna strona +',
-    bad: 'Brak supportu dla osob z orzeczeniem niepelnosprawnosci.',
+    bad: 'Brak supportu dla osób z orzeczeniem niepełnosprawności.',
     good:
-      'Dodatkowa warstwa kodu, pomagajaca w lepszej obsludze dla osob z orzeczona niepelnosprawnoscia.',
+      'Dodatkowa warstwa kodu, pomagająca w lepszej obsłudze dla osób z orzeczoną niepełnosprawnością.',
     svg: '18-disable',
   },
   {
-    title: 'Dzwonienie poprzez strone',
-    bad: 'Brak mozliwosci dzwonienia przez telefon.',
+    title: 'Dzwonienie poprzez stronę',
+    bad: 'Brak możliwości dzwonienia przez stronę.',
     good:
-      'Mozliwosc wykonania polaczenia. Podobna mozliwosc daje Google Moja Biznes Strona. (opcja na zyczenie)',
+      'Możliwość wykonania połączenia. Podobną możliwość daje Google Moja Firma. (opcja na życzenie)',
     svg: '10.vebcall',
   },
   {
-    title: 'Jezyki',
-    bad: 'Brak supportu dla innych jezykow',
+    title: 'Języki',
+    bad: 'Brak supportu dla innych języków',
     good:
-      'Mozliwosc przetlumaczenia strony na inne jezyki. (Tlumaczen dokonuja Panstwo).',
+      'Możliwość przetłumaczenia strony na inne języki. (Tłumaczeń dokonują Państwo).',
     svg: '11-language',
   },
 
   {
     title: 'Pliki',
     bad:
-      'Brak mozliwosci sciagania plikow (np. gdy chca Panstwo udostepnic darmowy e-book)',
+      'Brak możliwości ściągania plików (np. gdy chcą Państwo udostępnić darmowy e-book)',
     good:
-      'Brak mozliwosci by nie bylo mozliwosci :). Pliki sa do sciagniecia.',
+      'Brak możliwości by nie było możliwości :). Pliki są do ściagnięcia.',
     svg: '15-file',
   },
 
   {
     title: 'Logo',
-    bad: 'Brak loga. Jest rownoznaczny z brakiem identyfikacji firmy.',
+    bad: 'Brak loga. Jest równoznaczny z brakiem identyfikacji firmy.',
     good:
-      'Oferujemy poprawe aktualnego loga, badz stworzenie loga na nowo. Dobor kolorow strony bedzie wzgledem loga.',
+      'Oferujemy poprawę aktualnego loga, bądź stworzenie loga na nowo. Dobór kolorów strony będzie względem loga.',
     svg: '10-logo',
   },
   {
     title: 'Znaki wodne',
     bad:
-      'Brak znakow wodnych umozliwy kazdej jednej osobie na pobranie zdjec bez zgody.',
+      'Brak znaków wodnych umożliwi każdej jednej osobie na pobranie zdjęć bez zgody.',
     good:
-      'Male delikatnie widoczne informacje na zdjeciach niepozwalajace nieproszonym osobom na kopiowanie. (opcja na zyczenie)',
+      'Małe delikatnie widoczne informacje na zdjęciach niepozwalające nieproszonym osobom na kopiowanie. (opcja na życzenie)',
     svg: '17-vatermark',
   },
   {
     title: 'Parallax',
     bad:
-      'Brak efektu parallax. Jest to tylko dodatek lecz swietnie komponuje sie z smart object.',
+      'Brak efektu parallax. Jest to tylko dodatek lecz świetnie komponuje się ze smart object.',
     good:
-      'W przypadku uznania, dodajemy parallax tam gdzie trzeba. Jest to efekt ruchu elementow w roznych kierunkach w momencie scrollowania.',
+      'W przypadku uznania, dodajemy parallax tam gdzie trzeba. Jest to efekt ruchu elementów w różnych kierunkach w momencie scrollowania.',
     svg: '12-paralla',
   },
   {
     title: 'Tryb jasny/ciemny',
-    bad: 'Brak mozliwosci dostosowania kolorow do potrzeb lub pory dnia.',
+    bad: 'Brak możliwości dostosowania kolorów do potrzeb lub pory dnia.',
     good:
-      'W zaleznosci jak klient preferuje, mozemy zrobic tryb ciemny badz jasny dla strony, razem z przelacznikiem. (opcja na zyczenie)',
+      'W zależności jak klient preferuje, możemy zrobić tryb ciemny bądź jasny dla strony, razem z przełącznikiem. (opcja na życzenie)',
     svg: '16-darklightmode',
   },
   {
     title: 'Pionowy/Poziomy scroll',
     bad: 'Posiadanie tylko scrolla pionowego.',
     good:
-      'Scrollowanie strony moze przebiegac w pionie lub poziomie. Jest to opcjonalny efekt, rozpatrywany w ramach potrzeb. (opcja na zyczenie)',
+      'Scrollowanie strony może przebiegać w pionie lub poziomie. Jest to opcjonalny efekt, rozpatrywany w ramach potrzeb. (opcja na życzenie)',
     svg: '17-scrolldirection',
   },
   {
     title: 'Timeline',
     bad: 'Brak timeline lub podobnej informacji.',
     good:
-      'Tworzmy timeline, ktory idealnie ukazuj Panstwa osiagniecia i przyszle plany. (Element opcjonalny). (opcja na zyczenie)',
+      'Tworzmy timeline, który idealnie ukazuje Państwa osiągnięcia i przyszłe plany. (element opcjonalny) (opcja na życzenie)',
     svg: '18-timeline',
   },
   {
     title: 'Wykresy/Numery',
     bad:
-      'Brak wykresow badz numeracje przedstawiajacej dotychczasowe osiagniecia.',
+      'Brak wykresów bądź numeracji przedstawiającej dotychczasowe osiągnięcia.',
     good:
-      'Zapewnimy wykres badz numeracje. Nadamy animacje. Lecz Panstwo zawsze maja racje. :)',
+      'Zapewnimy wykres bądź numerację. Nadamy animację. Lecz Państwo zawsze mają rację. :)',
     svg: '19-chart',
   },
   {
     title: 'Popup-y',
-    bad: 'Brak popup-ow.',
+    bad: 'Brak popup-ów.',
     good:
-      'Idealne rozwiazanie dla dodatkowej ilosci informacji. Alternatywa do tworzenia tabow. (Element opcjonany). (opcja na zyczenie)',
+      'Idealne rozwiązanie dla dodatkowej ilości informacji. Alternatywa do tworzenia tabów. (element opcjonany) (opcja na życzenie)',
     svg: '19-popup',
   },
   {
     title: 'Ikona przy wyszukiwaniu',
     bad:
-      'Brak Favicon spowoduje brak wyswietlania sie ikony podczas wyszukiwania.',
-    good: 'Zadbamy o poprawnie pokazujaca sie ikone.',
+      'Brak Favicon spowoduje brak wyświetlania się ikony podczas wyszukiwania.',
+    good: 'Zadbamy o poprawnie pokazującą się ikonę.',
     svg: '21-iconsearch',
   },
   {
     title: 'Kursor',
-    bad: 'Zwykly kursor.',
-    good: `Zwykle kursor nie jest zly. Warto pamietac ze na stronie sa rozne elementy. 
-      Podczas klikania badz najezdzania na te elementy idealnym rozwiazaniem bedzie mala podmiana wyglada kursora dla uwidoczenienia innosci elementu.`,
+    bad: 'Zwykły kursor.',
+    good: `Zwykły kursor nie jest zły. Warto pamiętać że na stronie są różne elementy. 
+      Podczas klikania badz najeżdżania na te elementy idealnym rozwiązaniem będzie mała podmiana wygląda kursora dla uwidoczenienia inności elementu.`,
     svg: '22-cursor',
   },
   {
-    title: 'Tlo',
-    bad: 'Brak tla badz ozdobnych elementow.',
+    title: 'Tło',
+    bad: 'Brak tła bądź ozdobnych elementów.',
     good:
-      'Tlo to jeden z podstawowych elementow jest jak plutno dla malarza. Moze miec kolor jednolity, mieszany, mozaike, szablony itp.',
+      'Tło to jeden z podstawowych elementów. Jest jak płutno dla malarza. Może mieć kolor jednolity, mieszany, mozaikę, szablon itp.',
     svg: '23-background',
   },
   {
     title: 'Audio',
     bad: 'Brak audio.',
     good:
-      'Brak audio nie jest zly. W przypadku jednak gdy chcemy pobudzic inne zmysly klienta podczas wizyty, warto zadbac o delikatny nastroj. (opcja na zyczenie)',
+      'Brak audio nie jest zły. W przypadku jednak gdy chcemy pobudzić inne zmysły klienta podczas wizyty, warto zadbać o delikatny nastrój. (opcja na życzenie)',
     svg: '24-audio',
   },
   {
     title: 'Ikonki',
     bad: 'Brak ikonek.',
     good:
-      'Zapewnimy bardzo ladne i ciekawe ikonki, dostosowane do stylu strony.',
+      'Zapewnimy bardzo ładne i ciekawe ikonki, dostosowane do stylu strony.',
     svg: '24-audio',
   },
 ];
@@ -440,21 +440,21 @@ export const recommendation = [
     title: 'Sekcja FAQ',
     bad: 'Brak sekcji FAQ. ',
     good:
-      'Sekcja FAQ jest idealnym rozwiazaniem dla podstawowych badz najczesciej zadawanych pytan.',
+      'Sekcja FAQ jest idealnym rozwiązaniem dla podstawowych bądź najczęściej zadawanych pytań.',
     svg: '8-faq',
   },
   {
     title: 'Sekcja Tips',
     bad: 'Brak sekcji Tips.',
     good:
-      'Sekcja w ktorej mozemy podzielic sie z klientami naszymi wskazowkami, ktore moga dotyczyc czego tylko nasza dusza zapragnie. (Element opcjonalny).',
+      'Sekcja w której możemy podzielić się z klientami naszymi wskazówkami, które mogą dotyczyć czego tylko nasza dusza zapragnie. (element opcjonalny)',
     svg: '9-tips',
   },
   {
     title: 'Sekcja Prezent ',
     bad: 'Brak sekcji prezent.',
     good:
-      'Uwazamy ze im wiecej damy tym wiecej dostaniemy. To samo tyczy sie wszystkich biznesow. Z tej okazji proponujemy sekcje w ktorej moga Panstwo opowiedziec o aktualnej promocji, darmowym podarunku badz zaskoczyc przyszylych klientow czyms nietypowym.',
+      'Uważamy że im więcej damy tym więcej dostaniemy. To samo tyczy sie wszystkich innych biznesów. Z tej okazji proponujemy sekcję w której mogą Państwo opowiedzieć o aktualnej promocji, darmowym podarunku lub zaskoczyć przyszyłych klientów czymś nietypowym.',
     svg: '9-tips',
   },
 ];

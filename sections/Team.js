@@ -62,21 +62,21 @@ function Team() {
         </div> */}
 
         <div className='team__story'>
-          <p>Historia firmy SDT siega lat wczesnego dziecinstwa. </p>
+          <p>Historia firmy SDT sięga lat wczesnego dzieciństwa. </p>
           <p>
-            Wlasciciele Marcin i Dawid znaja sie juz od ponad 20 lat a od 3 lat
-            dzialaja wspolnie przy realizacji roznych projektow z zakresu IT w
+            Własciciele Marcin i Dawid znają się juz od ponad 20 lat a od 3 lat
+            dzialłaja wspoólnie przy realizacji różnych projektów z zakresu IT w
             tym kryptowalut.
           </p>
           <p>
-            Caly zamysl wspolpracy jak i pomyslo stworzenia Wirtualnych
-            Wizytowek okazal sie strzalem w dziesiatke, gdyz w idealnym momencie
-            zaczal on zapelniac luke na rynku, ktora powstala po wieloletniej
-            zlej praktyce tworzenia strony internetowych.
+            Cały zamysł współpracy jak i pomysł stworzenia Wirtualnych
+            Wizytówek okazał się strzałem w dziesiątkę, gdyż w idealnym momencie
+            zaczał on zapełniać lukę na rynku, która powstała po wieloletniej
+            złej praktyce tworzenia strony internetowych.
           </p>
           <br />
           <p>
-            Nasze siedziby znajduja sie w Poznaniu, Szczecinie, Glasgow
+            Nasze siedziby znajdują się w Poznaniu, Szczecinie, Glasgow
             (Szkocja) i Antwerpii (Belgia).
           </p>
           <p></p>
@@ -92,17 +92,17 @@ function Team() {
             <div className='team__info'>
               <h3 className='bg-color-red'>Marcin</h3>
               <p>
-                Tworca pomyslu, programista z wieloletnim doswiadczeniem,
+                Twórca pomysłu, programista z wieloletnim doświadczeniem,
                 absolwent filologii angielskiej i zagorzaly praktykant sportow
                 walki.
               </p>
               <p>
-                Zajmuje sie UX/UI strony; w tym animacjami, dynamicznoscia i
-                plynnoscia ruchu strony.
+                Zajmuje sie UX/UI strony; w tym animacjami, dynamicznością i
+                płynnością ruchu strony.
               </p>
               <p>
-                Pomimo treningow Karate kazdego dnia, jest do Panstwa dyspozycji
-                24 godziny na dobe, 7 dni w tygodniu.
+                Pomimo treningów Karate każdego dnia, jest do Państwa dyspozycji
+                24 godziny na dobę, 7 dni w tygodniu.
               </p>
             </div>
           </div>
@@ -115,15 +115,15 @@ function Team() {
             <div className='team__info team__info-right'>
               <h3 className='bg-color-red'>Dawid</h3>
               <p>
-                Prawa reka Marcina. Odpowiedzialny za strukture kodu, bazy
-                danych, poprawne SEO i narzedzia Google.
+                Prawa ręka Marcina. Odpowiedzialny za strukturę kodu, bazy
+                danych, poprawne SEO i narzędzia Google.
               </p>
               <p>
-                Na swoim koncie ma juz 6 lat doswiadczenia w pisaniu kodu. Zna
-                ponad 10 roznych jezykow programowania.
+                Na swoim koncie ma juz 6 lat doświadczenia w pisaniu kodu. Zna
+                ponad 10 różnych jezyków programowania.
               </p>
               <p>
-                W wolnym czasie gra na perkusji i wzbogaca swoja wiedze na temat
+                W wolnym czasie gra na perkusji i wzbogaca swoją wiedzę na temat
                 kryptowalut.
               </p>
             </div>

@@ -28,15 +28,15 @@ function StructureInfo() {
           <div className='structureInfo__text'>
             <h2>Sekcje</h2>
             <p>
-              W celu stworzenia profesjonalnej strony internetowej, ktora bedzie
-              zarowno dynamiczna jak i nowoczesna, postanowilismy rozwinac
-              dotychczasowe sposoby i dodac nowe, obowiazkowe opcje.
+              W celu stworzenia profesjonalnej strony internetowej, która będzie
+              zarówno dynamiczna jak i nowoczesna, postanowiliśmy rozwinąć
+              dotychczasowe sposoby i dodać nowe, obowiązkowe opcje.
             </p>
-            <p>Struktura ktora wybralismy zawiera wszystkie niezbedne informacje
+            <p>Struktura ktorą wybraliśmy zawiera wszystkie niezbędne informacje
               dla poprawnej prezentacji.
             </p>
-            <p>Calosc w polaczeniu z 60 krokami, stanowi idealne rozwiazanie
-              zyskujac coraz to wieksza popularnosc wsrod developerow.</p> 
+            <p>Całość w połączeniu z 60 krokami, stanowi idealne rozwiązanie
+              zyskując coraz to wiekszą popularność wsrod developerów.</p> 
           </div>
         </div>
       </div>

@@ -3,84 +3,84 @@ export const data = [
     img: 'WelcomeStructure',
     h3: 'Sekcja: Welcome',
     p:
-      'Sekcja poczatkowa, widoczna na samym wejsciu, w momencie gdy klient wejdzie na strone. Sekcja ta powinna zawierac czytelna informacje na temat tego co znajduje sie dalej na stronie.',
+      'Sekcja początkowa, widoczna na samym wejściu, w momencie gdy klient wejdzie na stronę. Sekcja ta powinna zawierać czytelną informację na temat tego co znajduje się dalej na stronie.',
   },
   {
     img: 'LogoStructure',
     h3: 'Sekcja: Loga klientow',
     p:
-      'Widoczne Loga klientow dzialaja bardzo dobrze na budowe zaufania. Firmy znane badz mniej znane; wszystkie Loga sie licza. Budujmy zaufanie.',
+      'Widoczne Loga klientów działają bardzo dobrze na budowę zaufania. Firmy znane bądź mniej znane; wszystkie Loga się liczą. Budujmy zaufanie.',
   },
   {
     img: 'OgolnyStructure',
-    h3: 'Sekcja: Ogolny opis',
+    h3: 'Sekcja: Ogólny opis',
     p:
-      'Krotka informacja na temat firmy. Moze to byc chwytliwy slogan, mala notka na ogolny temat, badz temat dotyczacy firmy. Czesto traktowana czesc jako przerywnik.',
+      'Krótka informacja na temat firmy. Może to być chwytliwy slogan, mała notka na ogólny temat, bądź temat dotyczący firmy.',
   },
   {
     img: 'StatsStructure',
     h3: 'Sekcja: Statystyki',
     p:
-      'Nic nie dziala lepiej jak liczby. Pokazmy zatem ze firma ma na swoim koncie wiele dokonan. Liczba klientow, liczba przetlumaczonych dokumentow itp.',
+      'Nic nie działa lepiej jak liczby. Pokażmy zatem że firma ma na swoim koncie wiele dokonań. Liczba klientów, liczba przetłumaczonych dokumentów itp.',
   },
   {
     img: 'SerwisStructure',
-    h3: 'Sekcja: Serwis + jezyki',
+    h3: 'Sekcja: Serwis + języki',
     p:
-      'Glowna sekcja w ktorej znajdujac sie konkretne informacje na temat zakresu serwisu firmy, tlumaczonych jezykow i innych waznych informacji.',
+      'Główna sekcja w której znajdują się konkretne informacje na temat zakresu serwisu firmy, tłumaczonych jezyków i innych ważnych informacji.',
   },
   {
     img: 'TeamStructure',
     h3: 'Sekcja: O nas',
     p:
-      'W tej sekcji uswiadomimy klientom kim sa osoby sprawujace serwis. Ladne, klarowne zdjecie, krotki opis. Sekcja czesto laczona z Sekcja Video.',
+      'W tej sekcji uświadomimy klięntom kim są osoby sprawujące serwis. Ładne, klarowne zdjęcie, krótki opis. Sekcja często łączona z Sekcją Video.',
   },
   {
     img: 'VideoStructure',
     h3: 'Sekcja: Video',
     p:
-      'Prezentacja statyczna czy dynamiczna. Oko ludzkie zawsze lepiej reaguje na cos co sie rusza/ Przemowmy zatem do klientow, pokazmy siebie z najlepszej strony.',
+      'Prezentacja statyczna lub dynamiczna? Oko ludzkie zawsze lepiej reaguje na coś co się rusza. Przemówmy zatem do klientów, pokażmy siebie z najlepszej strony.',
   },
   {
     img: 'CertyfikatyStructure',
     h3: 'Sekcja: Certyfikaty',
     p:
-      'Kolejny krok na budowe zaufania. Komu zaufamy bardziej? Osobie bez certyfikatow czy osobie z 10 certyfikatami?',
+      'Kolejny krok na budowę zaufania. Komu zaufamy bardziej? Osobie bez certyfikatów czy osobie z 10 certyfikatami?',
   },
   {
     img: 'PrezentacjeStructure',
     h3: 'Sekcja: Prezentacje',
     p:
-      'Najlepsze badz ostatnie prezentacje. Budowanie zaufania ciag dalszy. Klient ma prawo wiedziec jak dobrzy jestesmy w tym co oferuje nasz serwis.',
+      'Najlepsze bądź ostatnie prezentacje. Budowanie zaufania ciąg dalszy. Klient ma prawo wiedzieć jak dobrzy jesteśmy w tym co oferuje nasz serwis.',
   },
   {
     img: 'PriceStructure',
     h3: 'Sekcja: Cennik',
     p:
-      'Niektorzy mowia ze warto, inny ze nie. Bez cennika zmusim klientow do bezposredniego kontaktu. Z cennikiem dostarczymy juz pierwsze informacje duzo szybciej.',
+      'Niektórzy mowią że warto, inny że nie. Bez cennika zmusimy klientów do bezpośredniego kontaktu. Z cennikiem dostarczymy już pierwsze informacje dużo szybciej.',
   },
   {
     img: 'OpinionStructure',
-    h3: 'Sekcja: Opinie klientow',
+    h3: 'Sekcja: Opinie klientów',
     p:
-      'Zaufanie, zaufanie, zaufanie. Slowa innych osob przekonuja bardzo dobrze. Szczegolnie jesli sa to wypowiedzi 5 gwiazdkowe.',
+      'Zaufanie, zaufanie, zaufanie. Słowa innych osób przekonują bardzo dobrze. Szczególnie jeśli są to wypowiedzi 5 gwiazdkowe.',
   },
   {
     img: 'GiftStructure',
     h3: 'Sekcja: Prezent',
     p:
-      'Im wiecej damy od siebie tym wiecej dostaniemy. Pokazmy klientom ze w zamian za skorzystanie z naszych uslug, dostana nie tylko profesjonalny serwis ale takze cos co zapamietaja na dluzej.',
+      'Im więcej damy od siebie tym więcej dostaniemy. Pokażmy klientom ze w zamian za skorzystanie z naszych usług, dostaną nie tylko profesjonalny serwis ale także coś co zapamietają na dłużej.',
   },
   {
     img: 'MapStructure',
     h3: 'Sekcja: Mapa + Kontakt',
     p:
-      'Obowiazek jesli chcemy by kontaktowali sie z nami klienci badz wiedzieli gdzie maja nas szukac. Mapa, telefon, e-mail, live chat itp. Opcji jest wiele.',
+      'Obowiazek jeśli chcemy by kontaktowali sie z nami klienci bądź wiedzieli gdzie mają nas szukać. Mapa, telefon, e-mail, live chat itp. Opcji jest wiele.',
   },
   {
     img: 'MenuStructure',
     h3: 'Sekcja: Nawigacja + Footer',
     p:
-      'Gora i dol strony. Nic dodac nic ujac. Szybkie przemieszczanie sie zaoszczedza czasu a jak wiadomo czas to pieniadz.',
+      'Góra i dół strony. Nic dodać nic ująć. Szybkie przemieszczanie się zaoszczędza czasu a jak wiadomo czas to pieniądz.',
   },
 ];

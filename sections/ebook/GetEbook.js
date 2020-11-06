@@ -45,10 +45,10 @@ function GetEbook() {
         <div className='getBook__box'>
           <form onSubmit={(e) => submitEbook(e)}>
             {error && (
-              <p className='getBook__error' style={{ color: 'red' }}>Prosze podaj poprawny e-mail.</p>
+              <p className='getBook__error' style={{ color: 'red' }}>Proszę podaj poprawny e-mail.</p>
             )}
             {ok && (
-              <p className='getBook__ok' style={{ color: 'green' }}>E-book pobrany. Dziekujemy.</p>
+              <p className='getBook__ok' style={{ color: 'green' }}>E-book pobrany. Dziękujemy.</p>
             )}
             <input
               type='text'

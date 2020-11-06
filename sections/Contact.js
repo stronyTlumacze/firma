@@ -41,19 +41,17 @@ function Contact() {
             {/* <button onSubmit={(e) => submit(e)}>Wyslij</button> */}
           </form>
           <div className='contact__text'>
-            <h2>Zyski zaczynaja sie od kontaktu</h2>
-            <p>Dokladnie omowimy caly plan i ustalimy wszystkie szczegoly.</p>
+            <h2>Zyski zaczynają się od kontaktu</h2>
+            <p>Dokładnie omówimy cały plan i ustalimy wszystkie szczegóły.</p>
             <br />
             <p>
-              Wspolnie uda nam sie osiagnac cel a Twoja firma pozyska swietna
-              strone.
+              Wspólnie uda nam się osiągnąć cel a Twoja firma pozyska świetną
+              stronę.
             </p>
             <br />
-            <p>Nasza cena to tylko 2000zl.</p>
-            <br />
-            <p>Pierwszy krok nalezy do Ciebie.</p>
-            <p>My zajmiemy sie reszta.</p>
-            <h3>email@email.com</h3>
+            <p>Pierwszy krok należy do Ciebie.</p>
+            <p>My zajmiemy się resztą.</p>
+            <h3>strony.dla.tlumaczy@gmail.com</h3>
           </div>
         </div>
       </div>

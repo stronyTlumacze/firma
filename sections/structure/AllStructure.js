@@ -59,7 +59,7 @@ function AllStructure() {
       <div className='allStructure__wrapper'>
         <div className='allStructure__box'>
           <h2 className='main__two str-main__two'><span className='mark__black'></span>Wszystkie selekcje</h2>
-          <p>Ponizej obowiazkowe i opcjonalne sekcje</p>
+          <p>Poniżej obowiązkowe i opcjonalne sekcje</p>
         </div>
 
         <div className='allStructure__elements'>

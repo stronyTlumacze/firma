@@ -60,8 +60,8 @@ function Price() {
               <Typed strings={['0%']} typeSpeed={80} backSpeed={80} loop />
             </p>
           </div>
-          <p className='no__pay bg-color-red'>Na poczatku nie placisz nic!</p>
-          <p className='last__msg'>Pierwsza rata po 3 miesiacach od zakupu</p>
+          <p className='no__pay bg-color-red'>Na poczatku nie płacisz nic!</p>
+          <p className='last__msg'>Pierwsza rata po 3 miesiącach od zakupu</p>
         </div>
         <div className='prices'>
           {/* 1 */}
@@ -73,7 +73,7 @@ function Price() {
               <Checked /> Struktura 14 sekcji
             </p>
             <p>
-              <Checked /> 60 Krokow
+              <Checked /> 60 Kroków
             </p>
             <p>
               <Checked /> Google Moja Firma
@@ -84,8 +84,8 @@ function Price() {
             <br />
             <p className='maleinfo'>
               Pakiet podstawowy zawiera wszystkie potrzebne do zaistnienia i
-              wyroznienia sie na tle innych firm kroki. Jest idealnym
-              rozwiazaniem dla osob pracujacych w pojedynke lub malych firm.
+              wyróżnienia się na tle innych firm kroki. Jest idealnym
+              rozwiązaniem dla osób pracujących w pojedynke lub mniejszych firm.
             </p>
           </div>
           {/* 2 */}
@@ -112,12 +112,12 @@ function Price() {
             </p>
             <br />
             <p className='maleinfo'>
-              * Wyswietlajace sie automatycznie badz na zyczenie male video w
-              roznych miejscach strony i animowane popupy. Uzyskujemy w ten
-              sposob mozliwosc czystego zamieszczenia wiekszej ilosci informacji
-              i odgornego budowania zaufania.
+              * Wyświetlające się automatycznie bądź na życzenie małe video w
+              różnych miejscach strony i animowane popupy. Uzyskujemy w ten
+              sposób możliwość czystego zamieszczenia większej ilości informacji
+              i odgórnego budowania zaufania.
             </p>
-            <span className='to-example'><a href='https://prezentacja.vercel.app/' target="_blank" rel="noreferrer">Przyklad</a></span>
+            <span className='to-example'><a href='https://prezentacja.vercel.app/' target="_blank" rel="noreferrer">Przykład</a></span>
           </div>
           {/* 3 */}
           <div className='price__info'>
@@ -148,10 +148,10 @@ function Price() {
             </p>
             <br />
             <p className='maleinfo'>
-              * Interaktywny Wizytowka + podstrony (max 5). Kazda podstrona
-              to miejsce na wieksza ilosc informacji i mozliwosc zatrzymania
-              wizytujacej osoby na dluzej. Dynamiczne przejscia nadadza
-              plynnosci uzytkowaniu i mila, przyjazna dla oka atmosfere.
+              * Interaktywny Wizytówka + podstrony (max 5). Każda podstrona
+              to miejsce na większą ilość informacji i możliwość zatrzymania
+              wizytującej osoby na dłużej. Dynamiczne przejścia nadadzą
+              plynności użytkowaniu i miłą, przyjazną dla oka atmosferę.
             </p>
           </div>
         </div>

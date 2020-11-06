@@ -58,9 +58,9 @@ function Offer() {
       <div className='offer__wrapper'>
         <div className='offer__box'>
           <h2 className='main__two o-main__two'>
-            <span className='mark__black'></span>Interaktywne wizytowki
+            <span className='mark__black'></span>Interaktywne Wizytówki
           </h2>
-          <p>Idealne rozwiazanie dla firm 1-5 osobowych.</p>
+          <p>Idealne rozwiązanie dla firm 1-5 osobowych.</p>
         </div>
 
         <div className='offer__elements'>
@@ -76,7 +76,7 @@ function Offer() {
                 <div>
                   <p>1 - Sekcja Powitalna</p>
                   <p>2 - Sekcja Logo</p>
-                  <p>3 - Sekcja Opis ogolny</p>
+                  <p>3 - Sekcja Opis ogólny</p>
                   <p>4 - Sekcja Statystyki</p>
                   <p>5 - Sekcja Serwis</p>
                   <p>6 - Sekcja O Nas</p>
@@ -86,13 +86,13 @@ function Offer() {
                 <div>
                   <p>9 - Sekcja Prezentacja</p>
                   <p>10 - Sekcja Cennik</p>
-                  <p>11 - Sekcja Opinie Klientow</p>
+                  <p>11 - Sekcja Opinie Klientów</p>
                   <p>12 - Sekcja Prezent</p>
                   <p>13 - Sekcja Mapa + Kontakt</p>
                   <p>14 - Sekcja Nawigacja + Footer</p>
                   <p>
                     <span className='bg-color-red'>
-                      + dodatkowe sekcje na zyczenie
+                      + dodatkowe sekcje na życzenie
                     </span>
                   </p>
                 </div>
@@ -110,39 +110,39 @@ function Offer() {
             </div>
             <div className='element__right'>
               <h3 className='element__title'>
-                60 krokow ktore tworza Interaktywna Wizytowke
+                60 kroków które tworzą Interaktywną Wizytówką
               </h3>
 
               <p>
                 <span className='bg-color-red'>
                   # Strona pisana 100% od zera:{' '}
                 </span>
-                <br /> Bez uzycia szablonow czy nieslawnych, wolnych i
+                <br /> Bez uzycia szablonów czy niesławnych, wolnych i
                 powtarzalnych CMS (np. WordPress)
               </p>
               <br />
               <p>
                 <span className='bg-color-red'># SSR:</span> <br />
-                Strona tworzy sie po stronie serwera a nie w przegladrce.
-                Oznacza to ze robotom Google latwiej bedzie ja znalezc. Dzieki
-                temu pozycja strony bedzie o wiele lepsza a sama strona duzo
+                Strona tworzy się po stronie serwera a nie w przeglądarce.
+                Oznacza to ze robotom Google łatwiej będzie ją znaleźć. Dzięki
+                temu pozycja strony będzie o wiele lepsza a sama strona dużo
                 dynamiczniejsza.{' '}
               </p>
               <br />
               <p>
                 <span className='bg-color-red'># PWA:</span> <br />
-                Progresywna aplikacja, dzieki ktorej strona bedzie dzialac duzo
-                szybciej, pozwalajac na zapis danych po stronie klienta przy
-                pierwszych wizytach. PWA pozwala takze na to by Panstwa
-                Interaktywna Wizytowka dzialala nawet gdy nie bedzie polaczenia
+                Progresywna aplikacja, dzięki której strona będzie działać dużo
+                szybciej, pozwalając na zapis danych po stronie klienta przy
+                pierwszych wizytach. PWA pozwala także na to by Państwa
+                Interaktywna Wizytówka działała nawet gdy nie będzie połączenia
                 z internetem
               </p>
               <br />
               <p>
-                <span className='bg-color-red'># Responsywnosc:</span>
-                <br /> Strona w 100%, co do pixela (bedacego najmniejsza
-                jednostka wymiarowa), bedzie idealnie dopasowana pod kazde
-                urzadzenie i przegladarke internetowa
+                <span className='bg-color-red'># Responsywność:</span>
+                <br /> Strona w 100%, co do pixela (będącego najmniejszą
+                jednostką wymiarową), będzie idealnie dopasowana pod każde
+                urzadzenie i przeglądarkę internetową
               </p>
               <br />
               <p>
@@ -150,10 +150,10 @@ function Offer() {
                   # Instalacja i optymalizacja:
                 </span>{' '}
                 <br />
-                Google Search console i Google Analytics - profesjonalne
-                narzedzia do kontroli statystyk, pomagajace dotrzec do wiekszej
-                ilosci klientow a takze zobrazowac co wplywa na wzrost a co na
-                spadek zainteresowania serwisem
+                Google Search Console i Google Analytics - profesjonalne
+                narzedzia do kontroli statystyk, pomagające dotrzeć do większej
+                ilości klientów a także zobrazować co wpływa na wzrost a co na
+                spadek zainteresowania Pastwa serwisem
               </p>
               <p className='buttonGo buttonBlue'>
                 <Link href='/steps'>Zobacz wszystkie kroki &rarr;</Link>
@@ -171,11 +171,11 @@ function Offer() {
                 <h3 className='element__title'>Google My Business Page</h3>
 
                 <p>
-                  Bardzo wazna czesc informacyjna o firmie, widoczna z prawej
-                  stronie ekranu, po wyszukaniu w przegladarce Google.
+                  Bardzo ważna część informacyjna o firmie, widoczna z prawej
+                  stronie ekranu, po wyszukaniu w przeglądarce Google.
                 </p>
                 <p>
-                  80% firm wykorzystuje to narzedzie{' '}
+                  80% firm wykorzystuje to narzędzie{' '}
                   <span style={{ fontWeight: '700', color: '#fd2e41' }}>
                     tylko w 20%!
                   </span>{' '}
@@ -197,16 +197,16 @@ function Offer() {
                   </p>
                 </div>
                 <br />
-                <p>Zadbamy o kazda mozliwa pozycje dla Google Moja Firma.</p>
+                <p>Zadbamy o każda możliwą pozycję dla Google Moja Firma.</p>
                 <p>
-                  Dodatkowo damy Panstwu rady: <br />- jak dbac o to by strona
-                  pozyskiwala pozytywne komentarze, <br />
-                  - zlote gwiazdki <br />
-                  - byla wysoko oceniana <br />
+                  Dodatkowo damy Państwu rady: <br />- jak dbac o to by strona
+                  pozyskiwała pozytywne komentarze, <br />
+                  - złote gwiazdki <br />
+                  - była wysoko oceniana <br />
                 </p>
                 <br />
                 <p>
-                  &#40; Przyklad tego jak moze wygladac Google
+                  &#40; Przyklad tego jak może wygladąć Google
                   Moja Firma &#41;
                 </p>
               </div>
@@ -237,14 +237,14 @@ function Offer() {
                     loop
                   />
                 </p>
-                <p>Przygotowalismy dla Panstwa E-book. </p>
+                <p>Przygotowalisśmy dla Państwa E-book. </p>
                 <p>
-                  Jest to pelen informacji zbior najlepszych zasad dotyczacych
+                  Jest to pełen informacji zbiór najlepszych zasad dotyczących
                   tworzenia contentu
                 </p>
                 <p>
-                  marketingowego, social media i sposobow na zdobycie wiekszej
-                  ilosci klientow.
+                  marketingowego, social media i sposobów na zdobycie większej
+                  ilości klientów.
                 </p>
               </div>
               <p style={{ fontWeight: '700' }}>E-book jest w 100% darmowy.</p>

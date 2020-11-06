@@ -65,15 +65,15 @@ function EbookInfo() {
             <h2><span className='mark__black'></span>Content Marketing i Social Media</h2>
             <p>
               {' '}
-              Zbior najlepszych zasad dotyczacych tworzenia contentu
-              marketingowego, social media i sposobow na zdobycie wiekszej
-              ilosci klientow.
+              Zbiór najlepszych zasad dotyczących tworzenia contentu
+              marketingowego, social media i sposobów na zdobycie większej
+              ilości klientów.
             </p>
             <br />
             <p>
-              Tworca E-Booka Pan Michal Moneta od lat zajmuje sie zagadnieniamy
-              dotyczacymi marketingu. Jest to jego kolejna publikacja w ktorej
-              znajda Panstwo duzo wartosciowych wskazowek i informacji.{' '}
+              Twórca E-booka Pan Michał Moneta od lat zajmuje się zagadnieniamy
+              dotyczącymi marketingu. Jest to jego kolejna publikacja w której
+              znajdą Państwo dużo wartościowych wskazówek i informacji.{' '}
             </p>
 
             <GetEbook />

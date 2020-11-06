@@ -27,11 +27,11 @@ function Welcome() {
             <h1 className='title'>
               Interaktywne
               <br />
-              wizytowkowki
-              <br /> dla Tlumaczy
+              Wizytówki
+              <br /> dla Tłumaczy
               <br />
               <Typed
-                strings={['Jezykow Obycych']}
+                strings={['Jezyków Obycych']}
                 typeSpeed={150}
                 backSpeed={100}
                 loop
@@ -55,7 +55,7 @@ function Welcome() {
               <div className='right__option'>
                 <p>
                   <Checked />
-                  60 krokow
+                  60 kroków
                 </p>
                 <p>
                   <Checked />
