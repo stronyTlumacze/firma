@@ -2,6 +2,8 @@ const fs = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
 
+// https://leerob.io/blog/nextjs-sitemap-robots
+
 const getDate = new Date().toISOString();
 
 const YOUR_AWESOME_DOMAIN = "https://strony-dla-tlumaczy.pl";
@@ -11,16 +13,16 @@ const formatted = sitemap => prettier.format(sitemap, { parser: "html" });
 (async () => {
   const pages = await globby([
     // include
-    '../../pages/**/*{.js,.mdx}',
-    '!../../pages/_*.js',
-    '!../../pages/api'
+    'pages/**/*{.js,.mdx}',
+    '!pages/_*.js',
+    '!pages/api'
   ]);
 
   const pagesSitemap = `
     ${pages
       .map(page => {
         const path = page
-          .replace('../../pages', '')
+          .replace('pages', '')
           .replace('.js', '')
           .replace('.mdx', '')
           .replace(/\/index/g, "");
@@ -48,5 +50,5 @@ const formatted = sitemap => prettier.format(sitemap, { parser: "html" });
 
   const formattedSitemap = [formatted(generatedSitemap)];
 
-  fs.writeFileSync("../../public/sitemap.xml", formattedSitemap, "utf8");
+  fs.writeFileSync("public/sitemap.xml", formattedSitemap, "utf8");
 })();
