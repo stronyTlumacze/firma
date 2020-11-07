@@ -28,19 +28,19 @@ const oauth2Client = new OAuth2(
 );
 
 oauth2Client.setCredentials({
-  refresh_token: '1//04Gq8s43bXPkeCgYIARAAGAQSNwF-L9IrnI065ThLZySLnNvChVovYwBDXkcBMfBUPGEBp94NgqBfhBh7qO7wDNMZ1Z2pndVCG6Y',
+  refresh_token: '1//047G7h3UaL7U4CgYIARAAGAQSNwF-L9IrAyvsIFDOuWZy4X6C0O08sMef-TW08Ox7tLC-Y4eB8C_9DRQ2pInJtvLofQEMUXak9cs',
 });
 
 const accessToken = oauth2Client.getAccessToken();
 
-const smtpTransport = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     type: 'OAuth2',
     user: 'strony.dla.tlumaczy@gmail.com',
     clientId: '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
     clientSecret: 'xm56cdJ7HlRCXXjjf1ZKzqkY',
-    refreshToken: '1//04Gq8s43bXPkeCgYIARAAGAQSNwF-L9IrnI065ThLZySLnNvChVovYwBDXkcBMfBUPGEBp94NgqBfhBh7qO7wDNMZ1Z2pndVCG6Y',
+    refreshToken: '1//047G7h3UaL7U4CgYIARAAGAQSNwF-L9IrAyvsIFDOuWZy4X6C0O08sMef-TW08Ox7tLC-Y4eB8C_9DRQ2pInJtvLofQEMUXak9cs',
     accessToken,
   },
 });
