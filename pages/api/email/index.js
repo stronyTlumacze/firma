@@ -1,25 +1,35 @@
 const nodemailer = require('nodemailer');
+const smtpTransport = require('nodemailer-smtp-transport');
 
-const transporter = nodemailer.createTransport({
+// const transporter = nodemailer.createTransport({
+//   service: 'Gmail',
+//   auth: {
+//     type: 'OAuth2',
+//     user: 'strony.dla.tlumaczy@gmail.com',
+//     pass: 'tlumacze10',
+//     refreshToken:
+//       '1//0f2EeHOx2zyPyCgYIARAAGA8SNwF-L9IrezEsWNJM4uhAyBtq-oZGTl8yLETg6X5tSpSHiSYMrMnV2-m4f1x0QJvYrucd6Eqm9xc',
+//     accessToken:
+//       'ya29.A0AfH6SMAdz1bP5Y1FxvRGhN_WHUfNcjuTj4-wg4jdlAGYkroziXE_HWS2dWyePz-WD-j1bliABdPrjfN-N_ONQi-k1paxdJXgt5r1coaJPzJUAC91N5C_wSPs1Y5gu6b3LV8JwZrvAmeSATKOf5SAulnzjpPd3h_xqoQ4S2iMP_Q',
+//     clientId:
+//       '865506280459-dhbug7l21rasn0f0eolg3sbgh3q6khvc.apps.googleusercontent.com',
+//     clientSecret: 'gp6SrUxR3fIHH0Riunyok-Q_',
+//   },
+// });
+
+export const transporter = nodemailer.createTransport(smtpTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: false,
   service: 'Gmail',
-  auth: {
-    type: 'OAuth2',
-    user: 'strony.dla.tlumaczy@gmail.com',
-    pass: 'tlumacze10',
-    refreshToken:
-      '1//0f2EeHOx2zyPyCgYIARAAGA8SNwF-L9IrezEsWNJM4uhAyBtq-oZGTl8yLETg6X5tSpSHiSYMrMnV2-m4f1x0QJvYrucd6Eqm9xc',
-    accessToken:
-      'ya29.A0AfH6SMAdz1bP5Y1FxvRGhN_WHUfNcjuTj4-wg4jdlAGYkroziXE_HWS2dWyePz-WD-j1bliABdPrjfN-N_ONQi-k1paxdJXgt5r1coaJPzJUAC91N5C_wSPs1Y5gu6b3LV8JwZrvAmeSATKOf5SAulnzjpPd3h_xqoQ4S2iMP_Q',
-    clientId:
-      '865506280459-dhbug7l21rasn0f0eolg3sbgh3q6khvc.apps.googleusercontent.com',
-    clientSecret: 'gp6SrUxR3fIHH0Riunyok-Q_',
-  },
-});
+  auth: { user: 'strony.dla.tlumaczy@gmail.com', pass: 'tlumacze10' },
+  tls: { rejectUnauthorized: false }
+}));
 
 export default async (req, res) => {
   const { method } = req;
   const { email, name, msg } = req.body;
-    console.log('1')
+  console.log('1')
   switch (method) {
     case 'POST':
       try {
