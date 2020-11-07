@@ -28,9 +28,9 @@ export default function SEO({ title, description = '' }) {
       <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 
       {/* Tell search engines that this URL is the main page and avoid indexing other duplicate page URLs */}
-      {/* <link rel='canonical' href='https://yourwebsite.com/' /> */}
+      <link rel='canonical' href='https://strony-dla-tlumaczy.pl/' />
       {/* <link href="https://moz.com/" rel="home" /> */}
-      
+
       {/* Ma indexowac */}
       <meta name='robots' content='index, follow' />
 

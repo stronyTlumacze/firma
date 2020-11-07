@@ -15,20 +15,20 @@ const prettier = require('prettier');
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${pages
-              .map((page) => {
-                const path = page
-                  .replace('pages', '')
-                  .replace('.js', '')
-                  .replace('.mdx', '');
-                const route = path === '/index' ? '' : path;
+      .map((page) => {
+        const path = page
+          .replace('pages', '')
+          .replace('.js', '')
+          .replace('.mdx', '');
+        const route = path === '/index' ? '' : path;
 
-                return `
+        return `
                         <url>
-                            <loc>${`https://main-sigma.vercel.app${route}`}</loc>
+                            <loc>${`https://strony-dla-tlumaczy.pl${route}`}</loc>
                         </url>
                     `;
-              })
-              .join('')}
+      })
+      .join('')}
         </urlset>
     `;
 
