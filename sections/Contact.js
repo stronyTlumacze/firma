@@ -9,9 +9,28 @@ function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
+    console.log('1 ok')
+    fetch(`http://localhost:3000/api/email/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: email, name: name, msg: msg }),
+    }).then(() => {
+      console.log('ok 2');
+      setName('')
+      setEmail('')
+      setMsg('')
+    });
   };
 
-  const customDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'interia.pl', 'wp.pl']
+  const customDomains = [
+    'gmail.com',
+    'yahoo.com',
+    'outlook.com',
+    'interia.pl',
+    'wp.pl',
+  ];
 
   return (
     <div className='contact__container' id='contact'>
@@ -37,7 +56,7 @@ function Contact() {
               onChange={(e) => setMsg(e.target.value)}
               name='msg'
             />
-            <input type="submit" value="Wyślij" className='button'/>
+            <input type='submit' value='Wyślij' className='button' />
             {/* <button onSubmit={(e) => submit(e)}>Wyslij</button> */}
           </form>
           <div className='contact__text'>

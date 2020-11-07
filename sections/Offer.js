@@ -257,13 +257,13 @@ function Offer() {
       </div>
 
       <div className='offer__elementy'>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
-        <span class='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
+        <span className='sport-icon flag-pl'></span>
       </div>
     </div>
   );

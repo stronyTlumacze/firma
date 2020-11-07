@@ -20,7 +20,7 @@ function GetEbook() {
       }, 2000);
       return;
     }
-
+    console.log('1')
     // action
     fetch(`http://localhost:3000/api/ebook/`, {
       method: 'POST',
