@@ -17,9 +17,6 @@ export default async (req, res) => {
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
-    // host: 'smtp.gmail.com', // dodane dodatkowo
-    // port: 465, // dodane dodatkowo
-    // secure: true, // dodane dodatkowo
     auth: {
       type: 'OAuth2',
       user: 'strony.dla.tlumaczy@gmail.com',
@@ -66,79 +63,3 @@ export default async (req, res) => {
       break;
   }
 };
-
-// const sgMail = require("@sendgrid/mail");
-
-// const sendEmail = async ({ name, email }) => {
-//   await fetch(SENDGRID_API, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//       Authorization: `Bearer ${SENDGRID_API_KEY}`
-//     },
-//     body: JSON.stringify({
-// personalizations: [
-//   {
-//     to: [
-//       {
-//         email: 'strony.dla.tlumaczy@gmail.com'
-//       }
-//     ],
-//     subject: 'Demo success :)'
-//   }
-// ],
-//   from: {
-//   email: 'noreply@demo.com',
-//     name: 'Test SendGrid'
-// },
-// content: [
-//   {
-//     type: 'text/html',
-//     value: `Congratulations <b>CWELU</b>, you just sent an email with sendGrid`
-//   }
-// ]
-//     })
-//   });
-// }
-
-// export default async (req, res) => {
-//   sgMail.setApiKey('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');
-//   if (req.method === 'POST') {
-//     const msg = {
-//       personalizations: [
-//         {
-//           to: [
-//             {
-//               email: 'konojack@gmail.com'
-//             }
-//           ],
-//           subject: 'Demo success :)'
-//         }
-//       ],
-//       from: {
-//         email: 'strony.dla.tlumaczy@gmail.com',
-//         name: 'Test SendGrid'
-//       },
-//       content: [
-//         {
-//           type: 'text/html',
-//           value: `Congratulations <b>CWELU</b>, you just sent an email with sendGrid`
-//         }
-//       ]
-//     }
-
-//     await sgMail.send(msg).then(() => {
-//       console.log('Email sent')
-//     })
-//       .catch((error) => {
-//         console.error(error)
-//       })
-//     return res.status(200).end();
-//   }
-//   return res.status(404).json({
-//     error: {
-//       code: 'not_found',
-//       messgae: "The requested endpoint was not found or doesn't support this method."
-//     }
-//   });
-// }
