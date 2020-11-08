@@ -1,37 +1,36 @@
 const nodemailer = require('nodemailer');
-import smtpTransport from 'nodemailer-smtp-transport';
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 
-const oauth2Client = new OAuth2(
-  '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
-  'xm56cdJ7HlRCXXjjf1ZKzqkY',
-  "https://developers.google.com/oauthplayground"
-);
-
-oauth2Client.setCredentials({
-  refresh_token: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
-});
-
-const accessToken = oauth2Client.getAccessToken();
-
-const transporter = nodemailer.createTransport({
-  // service: 'gmail',
-  host: 'smtp.gmail.com', // dodane dodatkowo
-  port: 465, // dodane dodatkowo
-  secure: true, // dodane dodatkowo
-  auth: {
-    type: 'OAuth2',
-    user: 'strony.dla.tlumaczy@gmail.com',
-    clientId: '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
-    clientSecret: 'xm56cdJ7HlRCXXjjf1ZKzqkY',
-    refreshToken: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
-    accessToken,
-  },
-  tls: { rejectUnauthorized: false }
-});
-
 export default async (req, res) => {
+  const oauth2Client = new OAuth2(
+    '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
+    'xm56cdJ7HlRCXXjjf1ZKzqkY',
+    "https://developers.google.com/oauthplayground"
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
+  });
+
+  const accessToken = oauth2Client.getAccessToken();
+
+  const transporter = nodemailer.createTransport({
+    // service: 'gmail', // zakomentowane dodatkowo
+    host: 'smtp.gmail.com', // dodane dodatkowo
+    port: 465, // dodane dodatkowo
+    // secure: true, // dodane dodatkowo
+    auth: {
+      type: 'OAuth2',
+      user: 'strony.dla.tlumaczy@gmail.com',
+      clientId: '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
+      clientSecret: 'xm56cdJ7HlRCXXjjf1ZKzqkY',
+      refreshToken: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
+      accessToken,
+    },
+    tls: { rejectUnauthorized: false }
+  });
+
   const { method } = req;
   const { email, name, msg } = req.body;
   console.log('1')
@@ -71,15 +70,6 @@ export default async (req, res) => {
 };
 
 // const sgMail = require("@sendgrid/mail");
-// sgMail.setApiKey('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');
-
-// const msg = {
-//   to: 'strony.dla.tlumaczy@gmail.com', // Change to your recipient
-//   from: 'strony.dla.tlumaczy@gmail.com', // Change to your verified sender
-//   subject: 'Sending with SendGrid is Fun',
-//   text: 'and easy to do anywhere, even with Node.js',
-//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-// }
 
 // const sendEmail = async ({ name, email }) => {
 //   await fetch(SENDGRID_API, {
@@ -89,18 +79,46 @@ export default async (req, res) => {
 //       Authorization: `Bearer ${SENDGRID_API_KEY}`
 //     },
 //     body: JSON.stringify({
+// personalizations: [
+//   {
+//     to: [
+//       {
+//         email: 'strony.dla.tlumaczy@gmail.com'
+//       }
+//     ],
+//     subject: 'Demo success :)'
+//   }
+// ],
+//   from: {
+//   email: 'noreply@demo.com',
+//     name: 'Test SendGrid'
+// },
+// content: [
+//   {
+//     type: 'text/html',
+//     value: `Congratulations <b>CWELU</b>, you just sent an email with sendGrid`
+//   }
+// ]
+//     })
+//   });
+// }
+
+// export default async (req, res) => {
+//   sgMail.setApiKey('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');
+//   if (req.method === 'POST') {
+//     const msg = {
 //       personalizations: [
 //         {
 //           to: [
 //             {
-//               email: 'strony.dla.tlumaczy@gmail.com'
+//               email: 'konojack@gmail.com'
 //             }
 //           ],
 //           subject: 'Demo success :)'
 //         }
 //       ],
 //       from: {
-//         email: 'noreply@demo.com',
+//         email: 'strony.dla.tlumaczy@gmail.com',
 //         name: 'Test SendGrid'
 //       },
 //       content: [
@@ -109,19 +127,11 @@ export default async (req, res) => {
 //           value: `Congratulations <b>CWELU</b>, you just sent an email with sendGrid`
 //         }
 //       ]
-//     })
-//   });
-// }
+//     }
 
-// export default async (req, res) => {
-//   if (req.method === 'POST') {
-//     const { name, email } = req.body;
-//     // await sendEmail({ name, email });
-//     sgMail
-//       .send(msg)
-//       .then(() => {
-//         console.log('Email sent')
-//       })
+//     await sgMail.send(msg).then(() => {
+//       console.log('Email sent')
+//     })
 //       .catch((error) => {
 //         console.error(error)
 //       })

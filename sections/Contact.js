@@ -10,7 +10,7 @@ function Contact() {
   const submit = (e) => {
     e.preventDefault();
     console.log('1 ok')
-    fetch(`/api/email/`, {
+    fetch(`/api/email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
