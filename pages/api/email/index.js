@@ -45,6 +45,7 @@ export default async (req, res) => {
         };
         console.log('2')
         transporter.sendMail(message, function (error, response) {
+          console.log("WESZŁO DO SENDMAIL");
           if (error) {
             console.log('ERROR sendMail', error);
           } else {
