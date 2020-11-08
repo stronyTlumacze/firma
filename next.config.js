@@ -13,6 +13,8 @@ module.exports = withPWA({
     dest: 'public',
     runtimeCaching,
   },
+
+  target: 'serverless',
   // nextI18
   // rewrites: async () => nextI18NextRewrites(localeSubpaths),
   // publicRuntimeConfig: {

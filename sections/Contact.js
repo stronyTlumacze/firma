@@ -13,6 +13,7 @@ function Contact() {
     fetch(`/api/email`, {
       method: 'POST',
       headers: {
+        'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email: email, name: name, msg: msg }),
