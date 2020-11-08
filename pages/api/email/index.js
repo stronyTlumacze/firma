@@ -53,12 +53,10 @@ export default async (req, res) => {
             console.log('ERROR sendMail', error);
           } else {
             console.log(' email sent successfully');
-            res.status(201).json({ success: true });
+            res.status(200).json({ success: true });
           }
           transporter.close();
         });
-        console.log('3')
-        res.status(201).json({ success: true });
       } catch (error) {
         res.status(400).json({ success: false });
       }
