@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
     refreshToken: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
     accessToken,
   },
-  tls: { rejectUnauthorized: false }
+  // tls: { rejectUnauthorized: false }
 });
 
 export default async (req, res) => {
