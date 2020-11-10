@@ -58,7 +58,7 @@ function Layout({children}) {
       </div> */}
 
         {/* VIDEO */}
-        {children.props.children.key === '/' && <Video />}
+        {/* {children.props.children.key === '/' && <Video />} */}
 
         {/* POPUP */}
         {pop && <Popup setPop={setPop} />}

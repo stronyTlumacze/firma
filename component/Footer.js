@@ -8,7 +8,7 @@ function Footer() {
             <p className='copy'>&copy; Strony-dla-tlumaczy 2020 All rights reserved.</p>
             <div>
                 <p>+514088872</p>
-                <p>email@email.com</p>
+                <p>strony.dla.tlumaczy@gmail.com</p>
             </div>
             
         </footer>
