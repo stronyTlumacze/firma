@@ -22,7 +22,7 @@ function GetEbook() {
     }
    
     // action
-    fetch(`http://localhost:3000/api/ebook/`, {
+    fetch(`/api/ebook/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
