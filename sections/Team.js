@@ -65,7 +65,7 @@ function Team() {
           <p>Historia firmy SDT sięga lat wczesnego dzieciństwa. </p>
           <p>
             Własciciele Marcin i Dawid znają się juz od ponad 20 lat a od 3 lat
-            dzialłaja wspoólnie przy realizacji różnych projektów z zakresu IT w
+            działają wspoólnie przy realizacji różnych projektów z zakresu IT w
             tym kryptowalut.
           </p>
           <p>
@@ -93,15 +93,15 @@ function Team() {
               <h3 className='bg-color-red'>Marcin</h3>
               <p>
                 Twórca pomysłu, programista z wieloletnim doświadczeniem,
-                absolwent filologii angielskiej i zagorzaly praktykant sportow
+                absolwent filologii angielskiej i zagorzały praktykant sportów
                 walki.
               </p>
               <p>
-                Zajmuje sie UX/UI strony; w tym animacjami, dynamicznością i
+                Zajmuje się UX/UI strony; w tym animacjami, dynamicznością i
                 płynnością ruchu strony.
               </p>
               <p>
-                Pomimo treningów Karate każdego dnia, jest do Państwa dyspozycji
+                Pomimo treningów każdego dnia, jest do Państwa dyspozycji
                 24 godziny na dobę, 7 dni w tygodniu.
               </p>
             </div>

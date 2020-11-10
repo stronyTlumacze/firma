@@ -30,13 +30,13 @@ function StructureInfo() {
             <p>
               W celu stworzenia profesjonalnej strony internetowej, która będzie
               zarówno dynamiczna jak i nowoczesna, postanowiliśmy rozwinąć
-              dotychczasowe sposoby i dodać nowe, obowiązkowe opcje.
+              dotychczasowe sposoby i dodać nowe opcje.
             </p>
             <p>Struktura ktorą wybraliśmy zawiera wszystkie niezbędne informacje
               dla poprawnej prezentacji.
             </p>
             <p>Całość w połączeniu z 60 krokami, stanowi idealne rozwiązanie
-              zyskując coraz to wiekszą popularność wsrod developerów.</p> 
+              zyskując coraz to wiekszą popularność wśród deweloperów.</p> 
           </div>
         </div>
       </div>

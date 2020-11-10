@@ -28,20 +28,20 @@ function StepsInfo() {
           <div className='steps__text'>
             <h2>61 Krokow</h2>
             <p>
-              W celu stworzenia profesjonalnej strony internetowej, ktora bedzie
-              zarowno dynamiczna jak i nowoczesna, postanowilismy rozwinac
-              dotychczasowy sposob na tworzenie stron o wieksza ilosc
+              W celu stworzenia profesjonalnej strony internetowej, która będzie
+              zarówno dynamiczna jak i nowoczesna, postanowiliśmy rozwinąć
+              dotychczasowy sposób na tworzenie stron o większą ilość
               dodatkowych opcji.
             </p>
             <br />
             <p>
-              Strony przez nas tworzone podlegaja najnowszym regulacja ustalonym
+              Strony przez nas tworzone podlegają najnowszym regulacją ustalonym
               przez firme Google.
             </p>
             <br />
             <p>
-              Majac w zasiegu tyle mozliwosci nasza glowna idea stali sie
-              Tlumacze Jezykow Obcych. To na nich chcemy skupic nasze dzialania.
+              Mając w zasięgu tyle możliwości nasza główną ideą stali sie
+              Tłumacze Języków Obcych. To na nich chcemy skupic nasze działania.
             </p>
           </div>
         </div>

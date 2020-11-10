@@ -49,13 +49,13 @@ function Welcome() {
                 </p>
                 <p>
                   <Checked />
-                  14+ sekcji
+                  14+ Sekcji
                 </p>
               </div>
               <div className='right__option'>
                 <p>
                   <Checked />
-                  60 kroków
+                  60 Kroków
                 </p>
                 <p>
                   <Checked />

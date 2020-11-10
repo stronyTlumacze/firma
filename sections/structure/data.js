@@ -1,7 +1,7 @@
 export const data = [
   {
     img: 'WelcomeStructure',
-    h3: 'Sekcja: Welcome',
+    h3: 'Sekcja: Powitalna',
     p:
       'Sekcja początkowa, widoczna na samym wejściu, w momencie gdy klient wejdzie na stronę. Sekcja ta powinna zawierać czytelną informację na temat tego co znajduje się dalej na stronie.',
   },

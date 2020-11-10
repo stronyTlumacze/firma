@@ -60,7 +60,7 @@ function Price() {
               <Typed strings={['0%']} typeSpeed={80} backSpeed={80} loop />
             </p>
           </div>
-          <p className='no__pay bg-color-red'>Na poczatku nie płacisz nic!</p>
+          <p className='no__pay bg-color-red'>Na początku nie płacisz nic!</p>
           <p className='last__msg'>Pierwsza rata po 3 miesiącach od zakupu</p>
         </div>
         <div className='prices'>
@@ -85,7 +85,7 @@ function Price() {
             <p className='maleinfo'>
               Pakiet podstawowy zawiera wszystkie potrzebne do zaistnienia i
               wyróżnienia się na tle innych firm kroki. Jest idealnym
-              rozwiązaniem dla osób pracujących w pojedynke lub mniejszych firm.
+              rozwiązaniem dla osób pracujących w pojedynkę lub mniejszych firm.
             </p>
           </div>
           {/* 2 */}
@@ -148,7 +148,7 @@ function Price() {
             </p>
             <br />
             <p className='maleinfo'>
-              * Interaktywny Wizytówka + podstrony (max 5). Każda podstrona
+              * Interaktywna Wizytówka + podstrony (max 5). Każda podstrona
               to miejsce na większą ilość informacji i możliwość zatrzymania
               wizytującej osoby na dłużej. Dynamiczne przejścia nadadzą
               plynności użytkowaniu i miłą, przyjazną dla oka atmosferę.

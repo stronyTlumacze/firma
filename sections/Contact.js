@@ -7,21 +7,40 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [msg, setMsg] = useState('');
 
+  const [error, setError] = useState('');
+  const [ok, setOk] = useState('');
+
   const submit = (e) => {
     e.preventDefault();
-    console.log('1 ok')
+
+    if (email === '' || email.length === 0) return;
+
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!re.test(email)) {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 2000);
+      return;
+    }
+
     fetch(`/api/email`, {
       method: 'POST',
       headers: {
-        'Accept': 'application/json, text/plain, */*',
+        Accept: 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email: email, name: name, msg: msg }),
     }).then(() => {
-      console.log('ok 2');
-      setName('')
-      setEmail('')
-      setMsg('')
+      setName('');
+      setEmail('');
+      setMsg('');
+
+      setOk(true);
+      setTimeout(() => {
+        setOk(false);
+      }, 2000);
     });
   };
 
@@ -38,6 +57,16 @@ function Contact() {
       <div className='contact__wrapper'>
         <div className='contact__box'>
           <form onSubmit={(e) => submit(e)}>
+            {error && (
+              <p className='getBook__error' style={{ color: 'red' }}>
+                Proszę podaj poprawny e-mail.
+              </p>
+            )}
+            {ok && (
+              <p className='getBook__ok' style={{ color: 'green' }}>
+                E-mail wysłano. Dziękujemy.
+              </p>
+            )}
             <input
               placeholder='Imie'
               type='text'

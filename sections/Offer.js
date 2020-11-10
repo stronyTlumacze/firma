@@ -106,7 +106,7 @@ function Offer() {
           <div className='offer__element'>
             <div className='element__left'>
               <Steps />
-              <h3>60 Krokow</h3>
+              <h3>60 Kroków</h3>
             </div>
             <div className='element__right'>
               <h3 className='element__title'>
@@ -199,14 +199,14 @@ function Offer() {
                 <br />
                 <p>Zadbamy o każda możliwą pozycję dla Google Moja Firma.</p>
                 <p>
-                  Dodatkowo damy Państwu rady: <br />- jak dbac o to by strona
+                  Dodatkowo damy Państwu rady: <br />- jak dbać o to by strona
                   pozyskiwała pozytywne komentarze, <br />
                   - złote gwiazdki <br />
                   - była wysoko oceniana <br />
                 </p>
                 <br />
                 <p>
-                  &#40; Przyklad tego jak może wygladąć Google
+                  &#40; Przyklad tego jak może wyglądać Google
                   Moja Firma &#41;
                 </p>
               </div>
@@ -237,7 +237,7 @@ function Offer() {
                     loop
                   />
                 </p>
-                <p>Przygotowalisśmy dla Państwa E-book. </p>
+                <p>Przygotowaliśmy dla Państwa E-book. </p>
                 <p>
                   Jest to pełen informacji zbiór najlepszych zasad dotyczących
                   tworzenia contentu
