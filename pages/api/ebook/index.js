@@ -58,9 +58,7 @@ export default async (req, res) => {
           replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
-              filename: 'E-book Content Marketing i Social Media.pdf',
               path: './public/E-book Content Marketing i Social Media.pdf',
-              contentType: 'application/pdf'
             }
           ]
         };
@@ -68,7 +66,7 @@ export default async (req, res) => {
         transporter.sendMail(message, function (error, response) {
           console.log("WESZŁO DO SENDMAIL");
           if (error) {
-            console.log(err);
+            console.log(error);
             res.status(400).json({ success: false });
           } else {
             transporter.close();
