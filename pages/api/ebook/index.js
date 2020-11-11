@@ -58,7 +58,7 @@ export default async (req, res) => {
           replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
-              path: '/E-book Content Marketing i Social Media.pdf',
+              path: 'E-book Content Marketing i Social Media.pdf',
             }
           ]
         };
