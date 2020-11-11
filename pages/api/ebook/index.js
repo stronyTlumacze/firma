@@ -3,7 +3,7 @@ import Email from '../../../models/emailModel';
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
-
+const { join } = require('path');
 
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
@@ -47,38 +47,37 @@ export default async (req, res) => {
         });
         newEmail.save();
 
-        // const message = {
-        //   from: process.env.NODEMAILER_USER,
-        //   to: email,
-        //   subject: `Content Marketing i Social Media - Twój darmowy E-book`,
-        //   html: `
-        //   <p>Dziękujemy za zaufanie.</p>
-        //   <p>W załączniku przebywa przyszykowany dla Państwa E-book.</p>
-        //   <p>E-book jest zbiorem najlepszych zasad dotyczących tworzenia contentu marketingowego, social media i sposobów na zdobycie większej ilości klientów.</p>
-        //   `,
-        //   replyTo: process.env.NODEMAILER_USER,
-        //   attachments: [
-        //     {
-        //       filename: 'E-book Content Marketing i Social Media.pdf',
-        //       path: './public/E-book Content Marketing i Social Media.pdf',
-        //       contentType: 'application/pdf'
-        //     }
-        //   ]
-        // };
+        const file = join(__dirname, 'pliki', 'E-book Content Marketing i Social Media.pdf');
+        const message = {
+          from: process.env.NODEMAILER_USER,
+          to: email,
+          subject: `Content Marketing i Social Media - Twój darmowy E-book`,
+          html: `
+          <p>Dziękujemy za zaufanie.</p>
+          <p>W załączniku przebywa przyszykowany dla Państwa E-book.</p>
+          <p>E-book jest zbiorem najlepszych zasad dotyczących tworzenia contentu marketingowego, social media i sposobów na zdobycie większej ilości klientów.</p>
+          `,
+          replyTo: process.env.NODEMAILER_USER,
+          attachments: [
+            {
+              path: file
+            }
+          ]
+        };
 
-        // transporter.sendMail(message, function (error, response) {
-        //   console.log("WESZŁO DO SENDMAIL");
-        //   if (error) {
-        //     console.log(error);
-        //     res.status(400).json({ success: false });
-        //   } else {
-        //     console.log("UDAŁO SIĘ");
-        //     transporter.close();
-        //     res.status(200).json({ success: true });
-        //   }
-        // });
+        transporter.sendMail(message, function (error, response) {
+          console.log("WESZŁO DO SENDMAIL");
+          if (error) {
+            console.log(error);
+            res.status(400).json({ success: false });
+          } else {
+            console.log("UDAŁO SIĘ");
+            transporter.close();
+            res.status(200).json({ success: true });
+          }
+        });
 
-        res.status(200).json({ success: true });
+        // res.status(200).json({ success: true });
       } catch (error) {
         console.log("CATCH:", error);
         res.status(400).json({ success: false });

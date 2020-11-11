@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/ebook.js": {
+        "includeFiles": "pliki/**"
+      }
+    }
+  }
