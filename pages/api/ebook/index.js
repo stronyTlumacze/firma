@@ -3,12 +3,19 @@ import Email from '../../../models/emailModel';
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
+const { readFileSync } = require('fs')
+const { join } = require('path')
+const file = readFileSync('./public/E-book Content Marketing i Social Media.pdf')
+
+// import getConfig from 'next/config'
+// const { serverRuntimeConfig } = getConfig()
+// const file = fs.readFile(path.join(serverRuntimeConfig.PROJECT_ROOT, './public/E-book Content Marketing i Social Media.pdf'))
 
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
 
 export default async (req, res) => {
-
+  console.log(file, 'file filefile')
   const oauth2Client = new OAuth2(
     process.env.NODEMAILER_CLIENTID,
     process.env.NODEMAILER_CLIENTSECRET,
@@ -59,8 +66,9 @@ export default async (req, res) => {
           attachments: [
             {
               filename: 'E-book Content Marketing i Social Media.pdf',
-              path: './public/E-book Content Marketing i Social Media.pdf',
-              contentType: 'application/pdf'
+              content: file
+              // path: './public/E-book Content Marketing i Social Media.pdf',
+              // contentType: 'application/pdf'
             }
           ]
         };
