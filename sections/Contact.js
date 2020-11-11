@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { MalyTriangle, Krezka, Krezka2, InnyTriangle } from '../svg/Svg';
-import Email from 'react-email-autocomplete';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -72,12 +71,14 @@ function Contact() {
               type='text'
               onChange={(e) => setName(e.target.value)}
               name='name'
+              value={name}
             />
-            <Email
-              className='form-control'
-              placeholder='Podaj swoj adres e-mail'
-              domains={customDomains}
+            <input
+              placeholder='Podaj swój adres e-mail'
+              type='text'
               onChange={(e) => setEmail(e.target.value)}
+              name='email'
+              value={email}
             />
             <textarea
               placeholder='Wiadomosc'
@@ -85,6 +86,7 @@ function Contact() {
               rows='8'
               onChange={(e) => setMsg(e.target.value)}
               name='msg'
+              value={msg}
             />
             <input type='submit' value='Wyślij' className='button' />
             {/* <button onSubmit={(e) => submit(e)}>Wyslij</button> */}

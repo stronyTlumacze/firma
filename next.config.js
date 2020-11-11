@@ -1,6 +1,6 @@
 // const { nextI18NextRewrites } = require('next-i18next/rewrites');
 const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache')
+const runtimeCaching = require('next-pwa/cache');
 
 // const localeSubpaths = {
 //   pl: 'pl',
@@ -30,7 +30,6 @@ module.exports = withPWA({
   },
   // mongo
   env: {
-    MONGO:
-      'mongodb+srv://marcin100:marcinmarcin100@afi-app.rcqkw.mongodb.net/Afi-app?retryWrites=true&w=majority',
+    MONGO: process.env.MONGO_LINK,
   },
 });

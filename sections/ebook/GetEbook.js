@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import fileDownload from 'js-file-download';
 
 function GetEbook() {
   const [emailEbook, setEmailEbook] = useState('');
@@ -22,14 +21,13 @@ function GetEbook() {
     }
    
     // action
-    fetch(`http://localhost:3000/api/ebook/`, {
+    fetch(`/api/ebook/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email: emailEbook }),
     }).then(() => {
-      fileDownload('', './E-book Content Marketing i Social Media.pdf');
       // after action
       setEmailEbook('');
 

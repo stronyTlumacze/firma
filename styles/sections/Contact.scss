@@ -35,6 +35,20 @@
           width: 100%;
         }
 
+        .getBook__error, .getBook__ok {
+          color: red;
+          position: absolute;
+          top: -.6rem;
+          font-size: .8rem;
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+        }
+        
+        .getBook__ok {
+          color: green;
+        }
+
         input,
         textarea {
           border: none;
