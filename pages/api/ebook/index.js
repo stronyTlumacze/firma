@@ -56,11 +56,11 @@ export default async (req, res) => {
           <p>E-book jest zbiorem najlepszych zasad dotyczących tworzenia contentu marketingowego, social media i sposobów na zdobycie większej ilości klientów.</p>
           `,
           replyTo: process.env.NODEMAILER_USER,
-          // attachments: [
-          //   {
-          //     path: 'E-book Content Marketing i Social Media.pdf',
-          //   }
-          // ]
+          attachments: [
+            {
+              path: './public/E-book Content Marketing i Social Media.pdf',
+            }
+          ]
         };
 
         transporter.sendMail(message, function (error, response) {
