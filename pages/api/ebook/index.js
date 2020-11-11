@@ -59,7 +59,7 @@ export default async (req, res) => {
           attachments: [
             {
               filename: 'file.pdf',
-              path: './E-book Content Marketing i Social Media.pdf',
+              path: '../../E-book Content Marketing i Social Media.pdf',
               contentType: 'application/pdf'
             }
           ]

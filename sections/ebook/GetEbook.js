@@ -35,7 +35,7 @@ function GetEbook() {
       setTimeout(() => {
         setOk(false);
       }, 2000);
-    });
+    }).catch(error => console.error(error));
   };
   return (
     <div className='getBook__container'>

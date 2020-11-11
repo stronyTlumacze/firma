@@ -40,7 +40,7 @@ function Contact() {
       setTimeout(() => {
         setOk(false);
       }, 2000);
-    });
+    }).catch(error => console.error(error));
   };
 
   const customDomains = [
