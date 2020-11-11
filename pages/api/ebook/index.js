@@ -6,7 +6,7 @@ const OAuth2 = google.auth.OAuth2;
 const { join } = require('path');
 
 console.log("ENVII:", process.env.NODE_ENV);
-const filePath = process.env.NODE_ENV == "development" ? './public/E-book Content Marketing i Social Media.pdf' : join(__dirname, 'pliki', 'ebook.pdf')
+const filePath = process.env.NODE_ENV == "development" ? './public/E-book Content Marketing i Social Media.pdf' : join(__dirname, '_files', 'ebook.pdf')
 
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
