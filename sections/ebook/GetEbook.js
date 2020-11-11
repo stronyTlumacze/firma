@@ -21,7 +21,7 @@ function GetEbook() {
     }
    
     // action
-    fetch(`/api/ebook/`, {
+    fetch(`/api/ebook`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
