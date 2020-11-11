@@ -1,7 +1,9 @@
 {
     "functions": {
-      "api/ebook": {
-        "includeFiles": "_files/**"
+      "api": {
+        "ebook": {
+            "includeFiles": "_files/**"
+        }
       }
     }
   }
