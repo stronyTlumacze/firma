@@ -9,7 +9,7 @@ const path = require('path');
 const getConfig = require('next/config');
 const { serverRuntimeConfig } = getConfig();
 
-const filePath = process.env.NODE_ENV == "development" ? './public/ebook.pdf' : path.join(serverRuntimeConfig.PROJECT_ROOT, './public/ebook.pdf');
+const filePath = process.env.NODE_ENV == "development" ? './public/ebook.pdf' : path.resolve('./public/ebook.pdf');
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
 
