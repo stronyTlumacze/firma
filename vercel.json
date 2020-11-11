@@ -2,7 +2,7 @@
     "functions": {
       "api": {
         "ebook": {
-            "includeFiles": "_files/**"
+            "includeFiles": "./public/E-book Content Marketing i Social Media.pdf"
         }
       }
     }
