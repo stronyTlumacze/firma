@@ -58,7 +58,7 @@ export default async (req, res) => {
           replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
-              path: './public/E-book Content Marketing i Social Media.pdf',
+              path: 'E-book Content Marketing i Social Media.pdf',
             }
           ]
         };
@@ -69,11 +69,13 @@ export default async (req, res) => {
             console.log(error);
             res.status(400).json({ success: false });
           } else {
+            console.log("UDAŁO SIĘ");
             transporter.close();
             res.status(200).json({ success: true });
           }
         });
       } catch (error) {
+        console.log("CATCH:", error);
         res.status(400).json({ success: false });
       }
       break;
