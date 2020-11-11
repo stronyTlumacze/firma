@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import fileDownload from 'js-file-download';
 
 function GetEbook() {
   const [emailEbook, setEmailEbook] = useState('');
@@ -19,7 +20,7 @@ function GetEbook() {
       }, 2000);
       return;
     }
-   
+
     // action
     fetch(`/api/ebook`, {
       method: 'POST',
@@ -27,15 +28,20 @@ function GetEbook() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email: emailEbook }),
-    }).then(() => {
-      // after action
-      setEmailEbook('');
+    })
+      .then(() => {
+        // after action
+        setEmailEbook('');
 
-      setOk(true)
-      setTimeout(() => {
-        setOk(false);
-      }, 2000);
-    }).catch(error => console.error(error));
+        setOk(true);
+        setTimeout(() => {
+          setOk(false);
+        }, 2000);
+      })
+      .catch((error) => console.error(error))
+      .finally(() =>
+        fileDownload('', './E-book Content Marketing i Social Media.pdf')
+      );
   };
   return (
     <div className='getBook__container'>
@@ -43,16 +49,19 @@ function GetEbook() {
         <div className='getBook__box'>
           <form onSubmit={(e) => submitEbook(e)}>
             {error && (
-              <p className='getBook__error' style={{ color: 'red' }}>Proszę podaj poprawny e-mail.</p>
+              <p className='getBook__error' style={{ color: 'red' }}>
+                Proszę podaj poprawny e-mail.
+              </p>
             )}
             {ok && (
-              <p className='getBook__ok' style={{ color: 'green' }}>E-book pobrany. Dziękujemy.</p>
+              <p className='getBook__ok' style={{ color: 'green' }}>
+                E-book pobrany. Dziękujemy.
+              </p>
             )}
             <input
               type='text'
               onChange={(e) => {
-                setEmailEbook(e.target.value),
-                setError(false);
+                setEmailEbook(e.target.value), setError(false);
               }}
               value={emailEbook}
               placeholder='Podaj swoj adres e-mail'

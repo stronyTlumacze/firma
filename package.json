@@ -14,6 +14,7 @@
     "globby": "^11.0.1",
     "googleapis": "^64.0.0",
     "gsap": "^3.5.1",
+    "js-file-download": "^0.4.12",
     "mongoose": "^5.10.11",
     "next": "9.5.3",
     "next-i18next": "^6.0.3",
