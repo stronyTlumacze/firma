@@ -4,10 +4,7 @@ const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 
-const fs = require('fs');
 const path = require('path');
-const getConfig = require('next/config');
-const { serverRuntimeConfig } = getConfig();
 
 const filePath = process.env.NODE_ENV == "development" ? './public/ebook.pdf' : path.resolve('./public/ebook.pdf');
 // https://github.com/rivera1294/next-mongodb
