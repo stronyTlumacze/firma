@@ -28,6 +28,9 @@ module.exports = withPWA({
 
     return config;
   },
+  serverRuntimeConfig: {
+    PROJECT_ROOT: __dirname
+  },
   // mongo
   env: {
     MONGO: process.env.MONGO_LINK,

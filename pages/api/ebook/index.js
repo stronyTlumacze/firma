@@ -3,11 +3,13 @@ import Email from '../../../models/emailModel';
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
-const { join } = require('path');
 
-console.log("ENVII:", process.env.NODE_ENV);
-const filePath = process.env.NODE_ENV == "development" ? './public/E-book Content Marketing i Social Media.pdf' : join(__dirname, '_files', 'ebook.pdf')
+const fs = require('fs');
+const path = require('path');
+const getConfig = require('next/config');
+const { serverRuntimeConfig } = getConfig();
 
+const filePath = process.env.NODE_ENV == "development" ? './public/ebook.pdf' : path.join(serverRuntimeConfig.PROJECT_ROOT, './public/ebook.pdf');
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
 
