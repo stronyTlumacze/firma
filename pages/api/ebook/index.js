@@ -49,18 +49,18 @@ export default async (req, res) => {
         const message = {
           from: process.env.NODEMAILER_USER,
           to: email,
-          subject: `Content Marketing i Social Media - Twój darmowy Ebook`,
+          subject: `Content Marketing i Social Media - Twój darmowy E-book`,
           html: `
           <p>Dziękujemy za zaufanie.</p>
           <p>W załączniku przebywa przyszykowany dla Państwa E-book.</p>
           <p>E-book jest zbiorem najlepszych zasad dotyczących tworzenia contentu marketingowego, social media i sposobów na zdobycie większej ilości klientów.</p>
           `,
           replyTo: process.env.NODEMAILER_USER,
-          attachments: [
-            {
-              path: './public/E-book Content Marketing i Social Media.pdf'
-            }
-          ]
+          // attachments: [
+          //   {
+          //     path: './public/E-book Content Marketing i Social Media.pdf'
+          //   }
+          // ]
         };
 
         transporter.sendMail(message, function (error, response) {
