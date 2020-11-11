@@ -1,9 +1,0 @@
-{
-    "functions": {
-      "api": {
-        "ebook": {
-            "includeFiles": "./public/E-book Content Marketing i Social Media.pdf"
-        }
-      }
-    }
-  }
