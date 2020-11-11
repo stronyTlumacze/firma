@@ -8,6 +8,7 @@ const OAuth2 = google.auth.OAuth2;
 dbConnect();
 
 export default async (req, res) => {
+
   const oauth2Client = new OAuth2(
     process.env.NODEMAILER_CLIENTID,
     process.env.NODEMAILER_CLIENTSECRET,
@@ -46,7 +47,7 @@ export default async (req, res) => {
         newEmail.save();
 
         const message = {
-          from: 'strony.dla.tlumaczy@gmail.com',
+          from: process.env.NODEMAILER_USER,
           to: email,
           subject: `Content Marketing i Social Media - Twój darmowy Ebook`,
           html: `
@@ -54,7 +55,7 @@ export default async (req, res) => {
           <p>W załączniku przebywa przyszykowany dla Państwa E-book.</p>
           <p>E-book jest zbiorem najlepszych zasad dotyczących tworzenia contentu marketingowego, social media i sposobów na zdobycie większej ilości klientów.</p>
           `,
-          replyTo: 'strony.dla.tlumaczy@gmail.com',
+          replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
               path: './public/E-book Content Marketing i Social Media.pdf'
@@ -70,7 +71,6 @@ export default async (req, res) => {
           }
           transporter.close();
         });
-
       } catch (error) {
         res.status(400).json({ success: false });
       }

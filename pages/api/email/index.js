@@ -4,25 +4,25 @@ const OAuth2 = google.auth.OAuth2;
 
 export default async (req, res) => {
   const oauth2Client = new OAuth2(
-    '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
-    'xm56cdJ7HlRCXXjjf1ZKzqkY',
+    process.env.NODEMAILER_CLIENTID,
+    process.env.NODEMAILER_CLIENTSECRET,
     "https://developers.google.com/oauthplayground"
   );
 
   oauth2Client.setCredentials({
-    refresh_token: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
+    refresh_token: process.env.NODEMAILER_REFRESHTOKEN,
   });
 
   const accessToken = oauth2Client.getAccessToken();
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: process.env.NODEMAILER_SERVICE,
     auth: {
-      type: 'OAuth2',
-      user: 'strony.dla.tlumaczy@gmail.com',
-      clientId: '865506280459-n13ecdfcb4685rgq9pgv3sgm7cadvec2.apps.googleusercontent.com',
-      clientSecret: 'xm56cdJ7HlRCXXjjf1ZKzqkY',
-      refreshToken: '1//0f2QVhILC_bKxCgYIARAAGA8SNwF-L9Ir1qAJFcypbsFo6256cjmldegr_4n1fWmFs52uXPqrUhrp1dsBFw0wHC_qx3gkgTxIg44',
+      type: process.env.NODEMAILER_TYPE,
+      user: process.env.NODEMAILER_USER,
+      clientId: process.env.NODEMAILER_CLIENTID,
+      clientSecret: process.env.NODEMAILER_CLIENTSECRET,
+      refreshToken: process.env.NODEMAILER_REFRESHTOKEN,
       accessToken,
     },
     tls: { rejectUnauthorized: false }
@@ -30,7 +30,7 @@ export default async (req, res) => {
 
   const { method } = req;
   const { email, name, msg } = req.body;
-  console.log('1')
+
   switch (method) {
     case 'POST':
       try {
@@ -38,18 +38,16 @@ export default async (req, res) => {
 
         const message = {
           from,
-          to: 'strony.dla.tlumaczy@gmail.com',
+          to: process.env.NODEMAILER_USER,
           subject: `New message from ${from}`,
           text: msg,
           replyTo: from,
         };
-        console.log('2')
+      
         transporter.sendMail(message, function (error, response) {
-          console.log("WESZŁO DO SENDMAIL");
           if (error) {
-            console.log('ERROR sendMail', error);
+            res.status(400).json({ success: false });
           } else {
-            console.log(' email sent successfully');
             res.status(200).json({ success: true });
           }
           transporter.close();
