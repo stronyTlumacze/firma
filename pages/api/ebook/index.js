@@ -5,11 +5,13 @@ const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 const { join } = require('path');
 
+console.log("ENVII:", process.env.NODE_ENV);
+const filePath = process.env.NODE_ENV == "development" ? './public/E-book Content Marketing i Social Media.pdf' : join(__dirname, 'pliki', 'E-book Content Marketing i Social Media.pdf')
+
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
 
 export default async (req, res) => {
-  console.log(file, 'file filefile')
   const oauth2Client = new OAuth2(
     process.env.NODEMAILER_CLIENTID,
     process.env.NODEMAILER_CLIENTSECRET,
@@ -47,7 +49,6 @@ export default async (req, res) => {
         });
         newEmail.save();
 
-        const file = join(__dirname, 'pliki', 'E-book Content Marketing i Social Media.pdf');
         const message = {
           from: process.env.NODEMAILER_USER,
           to: email,
@@ -60,7 +61,7 @@ export default async (req, res) => {
           replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
-              path: file
+              path: filePath
             }
           ]
         };

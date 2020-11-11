@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/ebook.js": {
+      "api/ebook/index.js": {
         "includeFiles": "pliki/**"
       }
     }
