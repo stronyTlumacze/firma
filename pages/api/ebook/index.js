@@ -6,7 +6,7 @@ const OAuth2 = google.auth.OAuth2;
 
 const path = require('path');
 
-const filePath = process.env.NODE_ENV == "development" ? './public/ebook.pdf' : path.resolve('./public/ebook.pdf');
+const filePath = path.resolve('./public/ebook.pdf');
 // https://github.com/rivera1294/next-mongodb
 dbConnect();
 
@@ -60,6 +60,7 @@ export default async (req, res) => {
           replyTo: process.env.NODEMAILER_USER,
           attachments: [
             {
+              filename: 'Content Marketing i Social Media.pdf',
               path: filePath
             }
           ]
