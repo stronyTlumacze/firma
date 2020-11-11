@@ -47,7 +47,7 @@ export default async (req, res) => {
   switch (method) {
     case 'POST':
       try {
-
+        console.log("NODEMAILER_SERVICE: ", process.env.NODEMAILER_SERVICE)
         let newEmail = await new Email({
           email: email,
         });
@@ -74,18 +74,23 @@ export default async (req, res) => {
         };
 
         transporter.sendMail(message, function (error, response) {
+          console.log("WESZŁO DO SENDMAIL");
           if (error) {
+            console.log(error);
             res.status(400).json({ success: false });
           } else {
+            console.log("UDAŁO SIĘ");
+            transporter.close();
             res.status(200).json({ success: true });
           }
-          transporter.close();
         });
       } catch (error) {
+        console.log("CATCH:", error);
         res.status(400).json({ success: false });
       }
       break;
     default:
+      console.log("DEFAULT FALSE");
       res.status(400).json({ success: false });
       break;
   }
